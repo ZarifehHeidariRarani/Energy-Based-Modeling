@@ -9,7 +9,7 @@ The energy based modeling approach for recovering the outputs of Kholodenko's mo
 Interactions between EGF, EGFR, and Shc
 # Step 2
 Interactions between EGF, EGFR, Shc, Grb2, and SOS. Without the Shc-Grb2 interaction.
-# Step3
+# Step 3
 Interactions between EGF, EGFR, Shc, Grb2, and SOS. 
 # Step 4
 Interactions between EGF, EGFR, Shc, Grb2, SOS, and PLCg.
