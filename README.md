@@ -15,4 +15,5 @@ Interactions between EGF, EGFR, Shc, Grb2, and SOS.
 Interactions between EGF, EGFR, Shc, Grb2, SOS, and PLCg.
 
 # Parameter Estimation of Energy Based Model
-The model in Step 4 recovers the Kholodenko's output, but the results of the Kholodenko's model do not fit the experimental data very well, as we can see in the original study. As a result, in order to discover the parameters of the energy model that provide outputs that fit the experimental data, I employed a parameter estimation method for the energy model. The parameter estimation approach is based on Fides algorithm, using PEtab format.
+The model in Step 4 recovers the Kholodenko's output, but the results of the Kholodenko's model do not fit the experimental data very well, as we can see in the original study. As a result, in order to discover the parameters of the energy model that provide outputs that fit the experimental data, I employed a parameter estimation method for the energy model. The set of optimized parameters that seeks to provide outputs which best follow the experimental data may be found in the notebook included in the "Enery Model EGFR ParameterEStimation" folder.
+In addition, the outputs of our energy-based model, Kholodenko's model, and our earlier energy model (Kai's model) have been displayed in the notebook for easier comparison. 
