@@ -1,5 +1,5 @@
 
-#This model is the energy-based model of the kholodenko model 1999(biomodel)
+#This model is the energy-based model of the kholodenko model 1999
 begin model
 begin parameters
   #Kholodenko parameters
@@ -37,9 +37,9 @@ begin molecule types
 end molecule types
 
 begin seed species
-  EGF(egfr)                    680  #nM
-  EGFR(egf,egfr,p~0,shc,grb2) 100.0 #nM
-  Shc(egfr,p~0)               150.0 #nM
+  EGF(egfr)                    680 
+  EGFR(egf,egfr,p~0,shc,grb2) 100.0
+  Shc(egfr,p~0)               150.0
 end seed species
 
 begin energy patterns
