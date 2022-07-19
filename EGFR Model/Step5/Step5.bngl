@@ -1,0 +1,180 @@
+#This model is the energy-based model of the kholodenko model 1999(biomodel)
+begin model
+begin parameters
+# Estimated Parameters 
+# Kinetic Parameters
+r3_k3f 0.5066053240582693
+r3_k3b 1.0000000004981075e-05
+r4_V4 1.0000001225618357e-05
+r4_K4 20.8619425587582
+r6_k6f 9.999986154722192
+r6_k6b 1.0395806380953385
+r7_k7f 0.32940206797344757
+r7_k7b 0.9999999999999936
+r8_V8 0.0995976428113968
+r8_K8 1.0000000000000026e-05
+r14_k14f 9.999999999999993
+r14_k14b 1.000000000969513e-05
+r15_k15f 4.9999352226611675
+r15_k15b 0.33842451830718223
+r16_V16 4.676920763990933
+r16_K16 99.99417464042317
+r25_k25f 0.11231275613517369
+r25_k25b 0.011819816597271073
+# Free Energies
+Gf_LR 9.999766980804123
+Gf_RR 4.931741576136707
+Gf_RSh 0.5920014848986822
+Gf_LRR 1.153456722727831
+Gf_LRRL 1.274786448321655
+Gf_RShP 5.980811674644387
+Gf_RG 5.144868709729761
+Gf_GS -9.986404163747817
+Gf_RGS -3.045385112899916
+Gf_ShG 2.48084205375645
+Gf_RShG -8.092578598749972
+Gf_ShGS -9.999999999999996
+Gf_RPL 3.215185838079518
+Gf_RPLP 9.999999999999998
+
+Gf_Rmulti1 -7.489944849108865
+Gf_Rmulti2 3.161666008622294
+Gf_Rmulti3 7.074201996547927
+#
+phi 0.4729921535719295
+# Activation Energies
+Ea_RR -2.67385836925972
+Ea_LR -9.99999999999999
+Ea_RSh 5.256529807954977
+Ea_RG 3.4086325190513276
+Ea_GS -1.989191770642445
+Ea_ShG 3.8406750240820906
+Ea_RPL 4.61197335075414
+end parameters
+
+begin molecule types
+  EGF(egfr)
+  EGFR(egf,egfr,p~P~0,shc,grb2,plcg)
+  Shc(egfr,p~P~0,grb2)
+  Grb2(egfr,sos,shc) 
+  SOS(grb2) 
+  PLCg(egfr,p~0~P,p_i~0~I)
+end molecule types
+
+begin seed species
+  EGF(egfr)                        680   #nM
+  EGFR(egf,egfr,p~0,shc,grb2,plcg) 100.0 #nM
+  Shc(egfr,p~0,grb2)               150.0 #nM
+  Grb2(egfr,sos,shc)               85.0  #nM
+  SOS(grb2)                        34.0  #nM
+  PLCg(egfr,p~0,p_i~0)             105.0 #nM
+end seed species
+
+begin energy patterns
+  EGFR(egf!0).EGF(egfr!0)                                        Gf_LR
+  EGFR(egfr!1).EGFR(egfr!1)                                      Gf_RR+ 2*Gf_LRR + Gf_LRRL
+  EGFR(p~P,shc!2).Shc(egfr!2)                                    Gf_RSh
+  EGFR(p~P,shc!2).Shc(egfr!2,p~P)                                Gf_RShP
+  EGFR(p~P,grb2!3).Grb2(egfr!3)                                  Gf_RG
+  Grb2(sos!4).SOS(grb2!4)                                        Gf_GS
+  EGFR(p~P,grb2!3).Grb2(egfr!3,sos!4).SOS(grb2!4)                Gf_RGS
+  Shc(p~P,grb2!0).Grb2(shc!0)                                    Gf_ShG
+  EGFR(p~P,shc!2).Shc(egfr!2,p~P,grb2!3).Grb2(shc!3)             Gf_RShG
+  Shc(p~P,grb2!2).Grb2(shc!2,sos!3).SOS(grb2!3)                  Gf_ShGS
+  EGFR(p~P,plcg!2).PLCg(egfr!2)                                  Gf_RPL
+  EGFR(p~P,plcg!2).PLCg(egfr!2,p~P)                              Gf_RPLP
+  PLCg(egfr!0).EGFR(egfr,p~P,shc!1,plcg!0).Shc(egfr!1)           Gf_Rmulti1
+  Grb2(egfr!0).EGFR(egfr,p~P,shc!1,grb2!0).Shc(egfr!1)           Gf_Rmulti2
+  PLCg(egfr!0).EGFR(egfr,p~P,grb2!1,plcg!0).Grb2(egfr!1)         Gf_Rmulti3
+end energy patterns
+
+begin observables
+  Species EGF_EGFR2_P      EGFR(egfr,egf!1,p~P).EGF(egfr!1)   
+  
+  Species Shc_P            Shc(egfr,p~P,grb2) 
+  
+  Molecules EGFRPtotal     EGFR(egfr,egf!1,p~P,shc,grb2,plcg).EGF(egfr!1), EGFR(egfr,egf!1,p~P,shc,grb2,plcg).EGF(egfr!1), \
+                           EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2,p~0,grb2).EGF(egfr!1), EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2,p~0,grb2).EGF(egfr!1), \
+                           EGFR(egfr,egf!1,p~0,shc!2,grb2,plcg).Shc(egfr!2,p~P,grb2).EGF(egfr!1), EGFR(egfr,egf!1,p~0,shc!2,grb2,plcg).Shc(egfr!2,p~P,grb2).EGF(egfr!1), \
+                           EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,shc,sos).EGF(egfr!1), EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,sos,shc).EGF(egfr!1), \
+                           EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,sos!3).EGF(egfr!1).SOS(grb2!3), EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,sos!3).EGF(egfr!1).SOS(grb2!3), \
+                           EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,sos,shc!4).EGF(egfr!1).Shc(egfr,p~P,grb2!4), EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,sos,shc!4).EGF(egfr!1).Shc(egfr,p~P,grb2!4), \
+                           EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,sos!3,shc!4).EGF(egfr!1).Shc(egfr,p~P,grb2!4).SOS(grb2!3), EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,sos!3,shc!4).EGF(egfr!1).Shc(egfr,p~P,grb2!4).SOS(grb2!3), \
+                           EGFR(egfr,egf!1,grb2,p~P,plcg!2,shc).PLCg(egfr!2,p~?,p_i~0).EGF(egfr!1), EGFR(egfr,egf!1,grb2,p~P,plcg!2,shc).PLCg(egfr!2,p~?,p_i~0).EGF(egfr!1),
+
+  Molecules ShPtotal       EGFR(egfr,egf!1,p~P,shc!2,grb2).Shc(egfr!2,p~P,grb2).EGF(egfr!1), \
+                           Shc(egfr,p~P,grb2), \
+                           EGFR(egfr!1,egf,grb2,p~0,shc).EGFR(egfr!1,egf,grb2,p~0,shc!2).Grb2(egfr,shc!3,sos).Shc(egfr!2,grb2!3,p~P), \
+                           EGFR(egfr!1,egf,grb2,p~0,shc).EGFR(egfr!1,egf,grb2,p~0,shc!2).Grb2(egfr,shc!3,sos!4).Shc(egfr!2,grb2!3,p~P).SOS(grb2!4), \
+                           Shc(egfr,grb2!1,p~P).Grb2(egfr,shc!1,sos),  
+ 
+  Molecules Grb2EGFRtotal  EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,sos,shc).EGF(egfr!1), \
+                           EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,sos!3).EGF(egfr!1).SOS(grb2!3), \
+                           EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,sos,shc!4).EGF(egfr!1).Shc(egfr,p~P,grb2!4), \
+                           EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2,sos!3,shc!4).EGF(egfr!1).Shc(egfr,p~P,grb2!4).SOS(grb2!3),
+
+  Molecules Grb2Shctotal   Shc(egfr!?,grb2!1,p~P).Grb2(shc!1,sos!?),
+  Molecules PLCg_P         PLCg(egfr,p~P,p_i~0)
+  Molecules PLCgPtotal     PLCg(egfr,p~P,p_i~0),  EGFR(egfr,egf!1,grb2,p~P,plcg!2,shc).PLCg(egfr!2,p~P,p_i~0).EGF(egfr!1)         
+end observables 
+
+begin functions                                              
+  fRate3()  = r4_V4 /(EGF_EGFR2_P +r4_K4)
+  fRate15() = r16_V16 /(Shc_P+r16_K16)
+  fRate7()  = r8_V8/(PLCg_P +r8_K8)
+end functions
+
+begin reaction rules
+    # Ligand-receptor binding 
+  v1: EGFR(egfr,egf,p~0,shc,grb2,plcg) + EGF(egfr) <-> EGFR(egfr,egf!1,p~0,shc,grb2,plcg).EGF(egfr!1) Arrhenius(phi,Ea_LR)
+    # Receptor-aggregation
+  v2: EGFR(egfr,egf!1,p~0,shc,grb2,plcg).EGF(egfr!1) + EGFR(egfr,egf!1,p~0,shc,grb2,plcg).EGF(egfr!1) <-> EGFR(egfr!1,egf,p~0,shc,grb2,plcg).EGFR(egfr!1,egf,p~0,shc,grb2,plcg) Arrhenius(phi,Ea_RR)
+    # Transphosphorylation of Egfr
+  v3: EGFR(egfr!1,egf,p~0,shc,grb2,plcg).EGFR(egfr!1,egf,p~0,shc,grb2,plcg) <-> EGFR(egfr,egf!1,p~P,shc,grb2,plcg).EGF(egfr!1) r3_k3f,r3_k3b
+    # Dephosphorylayion by phosphotase
+  v4: EGFR(egfr,egf!1,p~P,shc,grb2,plcg).EGF(egfr!1) -> EGFR(egfr!1,egf,p~0,shc,grb2,plcg).EGFR(egfr!1,egf,p~0,shc,grb2,plcg) fRate3
+    # Egfr + Shc
+  v13: Shc(egfr) + EGFR(egfr,egf!1,p~P,shc,grb2,plcg).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2).EGF(egfr!1) Arrhenius(phi,Ea_RSh) 
+    # Shc transphos
+  v14: EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2,p~0).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~0,shc!2,grb2,plcg).Shc(egfr!2,p~P).EGF(egfr!1)  r14_k14f,r14_k14b 
+    # RShcP phosphorylation break apart 
+  v15: EGFR(egfr,egf!1,p~0,shc!2,grb2,plcg).Shc(egfr!2,p~P).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc,grb2,plcg).EGF(egfr!1) + Shc(egfr,p~P) r15_k15f,r15_k15b
+    # Dephosphorylayion of Shc by phosphotase
+  v16: Shc(egfr,p~P) -> Shc(egfr,p~0) fRate15
+    # EGFR + Grb2
+  v9:  Grb2(egfr) + EGFR(egfr,egf!1,grb2,p~P,shc,plcg).EGF(egfr!1) <-> EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2).EGF(egfr!1)  Arrhenius(phi,Ea_RG)
+    # Grb2 + SOS
+  v12: Grb2(egfr!+,sos!1).SOS(grb2!1) <-> Grb2(egfr!+,sos) + SOS(grb2) Arrhenius(phi,Ea_GS)
+    # Grb2 + Shc
+  v21: Grb2(egfr,shc) + Shc(egfr,grb2,p~P) <-> Shc(egfr,grb2!1,p~P).Grb2(egfr,shc!1) Arrhenius(phi,Ea_ShG) 
+    # EGFR + PLCg
+  v5: EGFR(egfr,egf!1,grb2,p~P,plcg,shc).EGF(egfr!1) + PLCg(egfr,p_i~0,p~0) <-> EGFR(egfr,egf!1,grb2,p~P,plcg!2,shc).PLCg(egfr!2,p_i~0,p~0).EGF(egfr!1) Arrhenius(phi,Ea_RPL)
+    # PLCg transphos
+  v6: EGFR(egfr,egf!1,grb2,p~P,plcg!2,shc).PLCg(egfr!2,p~0,p_i~0).EGF(egfr!1) <-> EGFR(egfr,egf!1,grb2,p~P,plcg!2,shc).PLCg(egfr!2,p~P,p_i~0).EGF(egfr!1)  r6_k6f,r6_k6b
+    # RPLCP phosphorylation break apart
+  v7: EGFR(egfr,egf!1,grb2,p~P,plcg!2,shc).PLCg(egfr!2,p~P,p_i~0).EGF(egfr!1) <-> EGFR(egfr,egf!1,grb2,p~P,plcg,shc).EGF(egfr!1)+PLCg(egfr,p~P,p_i~0)  r7_k7f, r7_k7b
+    # PLCg dephosphorylation, catalytic
+  v8: PLCg(egfr,p~P,p_i~0) -> PLCg(egfr,p~0,p_i~0)   fRate7
+    # PLCg Inactivation
+  v25: PLCg(egfr,p~P,p_i~0) <-> PLCg(egfr,p~0,p_i~I) r25_k25f,r25_k25b
+  # Multiple bindings
+  # EGFR+PLCg+Shc
+  EGFR(egfr,egf!1,grb2,p~P,plcg!2,shc).PLCg(egfr!2,p_i~0,p~0).EGF(egfr!1) + Shc(egfr,p~0,grb2) <-> EGFR(egfr,egf!1,grb2,p~P,plcg!2,shc!0).PLCg(egfr!2,p_i~0,p~0).EGF(egfr!1).Shc(egfr!0,p~P,grb2)  Arrhenius(phi,Ea_RSh)
+  EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2).EGF(egfr!1) + PLCg(egfr,p~0,p_i~0) <-> EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg!3).Shc(egfr!2).EGF(egfr!1).PLCg(egfr!3,p~P,p_i~0)  Arrhenius(phi,Ea_RPL)
+  
+  #EGFR+Shc+Grb2
+  EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2).EGF(egfr!1) + Grb2(egfr,shc) <-> EGFR(egfr,egf!1,p~P,shc!2,grb2!0,plcg).Shc(egfr!2).EGF(egfr!1).Grb2(egfr!0,shc)  Arrhenius(phi,Ea_RG)
+  EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2).EGF(egfr!1) + Shc(egfr,p~0,grb2) <-> EGFR(egfr,egf!1,grb2!2,p~P,shc!0,plcg).Grb2(egfr!2).EGF(egfr!1).Shc(egfr!0,p~P,grb2) Arrhenius(phi,Ea_RSh)
+
+  #EGFR+PLCg+Grb2
+  EGFR(egfr,egf!1,grb2,p~P,plcg!2,shc).PLCg(egfr!2,p_i~0,p~0).EGF(egfr!1) + Grb2(egfr,shc) <-> EGFR(egfr,egf!1,grb2!0,p~P,plcg!2,shc).PLCg(egfr!2,p_i~0,p~0).EGF(egfr!1).Grb2(egfr!0,shc)   Arrhenius(phi,Ea_RG)
+  EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg).Grb2(egfr!2).EGF(egfr!1) + PLCg(egfr,p~0,p_i~0) <-> EGFR(egfr,egf!1,grb2!2,p~P,shc,plcg!0).Grb2(egfr!2).EGF(egfr!1).PLCg(egfr!0,p~P,p_i~0)   Arrhenius(phi,Ea_RPL)
+end reaction rules
+end model
+
+generate_network({overwrite=>1,TextReaction=>0,print_iter=>0,max_iter=>99})
+writeSBML()
+simulate({method=>"ode",t_end=>120,n_steps=>1200})
+
+
+
