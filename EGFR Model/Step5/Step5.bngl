@@ -51,6 +51,8 @@ Ea_RG 3.7727168244549842
 Ea_GS -1.6461566122391873
 Ea_ShG 3.729355094013452
 Ea_RPL 4.4904825296307465
+end parameters
+
 begin molecule types
   EGF(egfr)
   EGFR(egf,egfr,p~P~0,shc,grb2,plcg)
