@@ -1,0 +1,1 @@
+#define sigma_observable_EGFRPtotal1 sigmay[0]
