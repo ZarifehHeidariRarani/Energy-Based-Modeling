@@ -1,0 +1,55 @@
+BioNetGen version 2.8.3
+Reading from file /Users/faeder/Library/CloudStorage/OneDrive-UniversityofPittsburgh/Projects/Energy-Based-Modeling/EGFR Model/Step1/Step1/2022_08_09__15_23_52/Step1.bngl (level 0)
+Read 20 parameters.
+Read 3 molecule types.
+Read 3 species.
+Read 4 energy patterns(s).
+Read 4 observable(s).
+Read 2 functions.
+Read 8 reaction rule(s).
+ACTION: generate_network( Step1 )
+Iteration   0:     3 species      0 rxns  0.00e+00 CPU s
+Iteration   1:     4 species      1 rxns  0.00e+00 CPU s
+Iteration   2:     5 species      3 rxns  0.00e+00 CPU s
+Iteration   3:     6 species      5 rxns  1.00e-02 CPU s
+Iteration   4:     7 species      8 rxns  0.00e+00 CPU s
+Iteration   5:     8 species     10 rxns  0.00e+00 CPU s
+Iteration   6:     9 species     12 rxns  0.00e+00 CPU s
+Iteration   7:    10 species     15 rxns  0.00e+00 CPU s
+Iteration   8:    10 species     16 rxns  0.00e+00 CPU s
+Cumulative CPU time for each rule
+Rule   1:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   2:     2 reactions 1.00e-02 CPU s 5.00e-03 CPU s/rxn
+Rule   3:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   4:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   5:     4 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   6:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   7:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   8:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Total   :    16 reactions 1.00e-02 CPU s 6.25e-04 CPU s/rxn
+Wrote network in net format to ./Step1.net.
+CPU TIME: generate_network 0.02 s.
+ACTION: simulate( method=>"cvode" )
+Network simulation using cvode
+WARNING: writeFile(): Overwriting existing file ./Step1.net.
+Wrote network in net format to ./Step1.net.
+Running run_network on Jamess-MacBook-Pro.local
+full command: /Users/faeder/Library/CloudStorage/OneDrive-UniversityofPittsburgh/Code/PyBioNetGen/bionetgen/bng-mac/bin/run_network -o ./Step1 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g ./Step1.net ./Step1.net 1 120
+[simulation PID is: 80898]
+run_network 3.0
+Read 28 parameters from ./Step1.net
+Read 10 species from ./Step1.net
+Read 4 group(s) from ./Step1.net
+Read 2 function(s) from ./Step1.net
+Read 16 reaction(s) from ./Step1.net
+16 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file ./Step1.cdat.
+Time course of groups written to file ./Step1.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from ./Step1.cdat
+CPU TIME: simulate 0.02 s.
+Finished processing file /Users/faeder/Library/CloudStorage/OneDrive-UniversityofPittsburgh/Projects/Energy-Based-Modeling/EGFR Model/Step1/Step1/2022_08_09__15_23_52/Step1.bngl.
+CPU TIME: total 0.06 s.

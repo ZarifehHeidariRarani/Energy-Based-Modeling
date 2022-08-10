@@ -1,0 +1,3275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+<key id="d0" for="node" yfiles.type="nodegraphics"/>
+<key id="d1" for="edge" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <node id="n0" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">v1</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n0:" edgedefault="directed">
+        <node id="n0::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n0::n0:" edgedefault="directed">
+            <node id="n0::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n0::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n0::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n0::n0::n2:" edgedefault="directed">
+                <node id="n0::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n0::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n0::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n0::n1:" edgedefault="directed">
+            <node id="n0::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n0::n2">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">AddBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n1" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">_reverse_v1</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n1:" edgedefault="directed">
+        <node id="n1::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n1::n0:" edgedefault="directed">
+            <node id="n1::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n1::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n1::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n1::n0::n2:" edgedefault="directed">
+                <node id="n1::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n1::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n1::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n1::n1:" edgedefault="directed">
+            <node id="n1::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n1::n2">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">DeleteBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n2" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">v2</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n2:" edgedefault="directed">
+        <node id="n2::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n2::n0:" edgedefault="directed">
+            <node id="n2::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n2::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n2::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n2::n0::n2:" edgedefault="directed">
+                <node id="n2::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n2::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n2::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n2::n1:" edgedefault="directed">
+            <node id="n2::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n2::n2" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n2::n2:" edgedefault="directed">
+            <node id="n2::n2::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n2::n2::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n2::n2::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n2::n2::n2:" edgedefault="directed">
+                <node id="n2::n2::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n2::n2::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n2::n3" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n2::n3:" edgedefault="directed">
+            <node id="n2::n3::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n2::n4">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">AddBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n3" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">_reverse_v2</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n3:" edgedefault="directed">
+        <node id="n3::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n3::n0:" edgedefault="directed">
+            <node id="n3::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n3::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n3::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n3::n0::n2:" edgedefault="directed">
+                <node id="n3::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n3::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n3::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n3::n1:" edgedefault="directed">
+            <node id="n3::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n3::n2" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n3::n2:" edgedefault="directed">
+            <node id="n3::n2::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n3::n2::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n3::n2::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n3::n2::n2:" edgedefault="directed">
+                <node id="n3::n2::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n3::n2::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n3::n3" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n3::n3:" edgedefault="directed">
+            <node id="n3::n3::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n3::n4">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">DeleteBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n4" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">v3</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n4:" edgedefault="directed">
+        <node id="n4::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n4::n0:" edgedefault="directed">
+            <node id="n4::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n4::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n4::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n4::n0::n2:" edgedefault="directed">
+                <node id="n4::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n4::n0::n2::n1">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n4::n0::n2::n2">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#CC99FF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">ChangeState</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n4::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n4::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n4::n1:" edgedefault="directed">
+            <node id="n4::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n4::n1::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n4::n1::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n4::n1::n2:" edgedefault="directed">
+                <node id="n4::n1::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n4::n1::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n4::n2" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n4::n2:" edgedefault="directed">
+            <node id="n4::n2::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n4::n3">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">DeleteBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n4::n4">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">DeleteMol</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n4::n5">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">AddBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n4::n6">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">AddMol</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n5" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">_reverse_v3</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n5:" edgedefault="directed">
+        <node id="n5::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n5::n0:" edgedefault="directed">
+            <node id="n5::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n5::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n5::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n5::n0::n2:" edgedefault="directed">
+                <node id="n5::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n5::n0::n2::n1">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n5::n0::n2::n2">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#CC99FF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">ChangeState</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n5::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n5::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n5::n1:" edgedefault="directed">
+            <node id="n5::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n5::n2" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n5::n2:" edgedefault="directed">
+            <node id="n5::n2::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n5::n2::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n5::n2::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n5::n2::n2:" edgedefault="directed">
+                <node id="n5::n2::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n5::n2::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n5::n3">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">DeleteBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n5::n4">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">DeleteMol</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n5::n5">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">AddBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n5::n6">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">AddMol</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n6" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">v4</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n6:" edgedefault="directed">
+        <node id="n6::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n6::n0:" edgedefault="directed">
+            <node id="n6::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n6::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n6::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n6::n0::n2:" edgedefault="directed">
+                <node id="n6::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n6::n0::n2::n1">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n6::n0::n2::n2">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#CC99FF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">ChangeState</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n6::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n6::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n6::n1:" edgedefault="directed">
+            <node id="n6::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n6::n2" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n6::n2:" edgedefault="directed">
+            <node id="n6::n2::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n6::n2::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n6::n2::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n6::n2::n2:" edgedefault="directed">
+                <node id="n6::n2::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n6::n2::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n6::n3">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">DeleteBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n6::n4">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">DeleteMol</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n6::n5">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">AddBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+        <node id="n6::n6">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">AddMol</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n7" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">v13</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n7:" edgedefault="directed">
+        <node id="n7::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">Shc</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n7::n0:" edgedefault="directed">
+            <node id="n7::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n7::n0::n1" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n7::n0::n1:" edgedefault="directed">
+                <node id="n7::n0::n1::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+          </graph>
+        </node>
+        <node id="n7::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n7::n1:" edgedefault="directed">
+            <node id="n7::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n7::n1::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n7::n1::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n7::n1::n2:" edgedefault="directed">
+                <node id="n7::n1::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n7::n1::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n7::n2" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n7::n2:" edgedefault="directed">
+            <node id="n7::n2::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n7::n3">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">AddBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n8" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">_reverse_v13</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n8:" edgedefault="directed">
+        <node id="n8::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n8::n0:" edgedefault="directed">
+            <node id="n8::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n8::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n8::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n8::n0::n2:" edgedefault="directed">
+                <node id="n8::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n8::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n8::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">Shc</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n8::n1:" edgedefault="directed">
+            <node id="n8::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n8::n1::n1" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n8::n1::n1:" edgedefault="directed">
+                <node id="n8::n1::n1::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+          </graph>
+        </node>
+        <node id="n8::n2" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n8::n2:" edgedefault="directed">
+            <node id="n8::n2::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n8::n3">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">DeleteBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n9" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">v14</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n9:" edgedefault="directed">
+        <node id="n9::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n9::n0:" edgedefault="directed">
+            <node id="n9::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n9::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n9::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n9::n0::n2:" edgedefault="directed">
+                <node id="n9::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n9::n0::n2::n1">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n9::n0::n2::n2">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#CC99FF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">ChangeState</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n9::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n9::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">Shc</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n9::n1:" edgedefault="directed">
+            <node id="n9::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n9::n1::n1" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n9::n1::n1:" edgedefault="directed">
+                <node id="n9::n1::n1::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n9::n1::n1::n1">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n9::n1::n1::n2">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#CC99FF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">ChangeState</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+          </graph>
+        </node>
+        <node id="n9::n2" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n9::n2:" edgedefault="directed">
+            <node id="n9::n2::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+      </graph>
+    </node>
+    <node id="n10" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">_reverse_v14</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n10:" edgedefault="directed">
+        <node id="n10::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n10::n0:" edgedefault="directed">
+            <node id="n10::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n10::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n10::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n10::n0::n2:" edgedefault="directed">
+                <node id="n10::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n10::n0::n2::n1">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n10::n0::n2::n2">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#CC99FF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">ChangeState</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n10::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n10::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">Shc</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n10::n1:" edgedefault="directed">
+            <node id="n10::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n10::n1::n1" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n10::n1::n1:" edgedefault="directed">
+                <node id="n10::n1::n1::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n10::n1::n1::n1">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n10::n1::n1::n2">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#CC99FF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">ChangeState</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+          </graph>
+        </node>
+        <node id="n10::n2" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n10::n2:" edgedefault="directed">
+            <node id="n10::n2::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+      </graph>
+    </node>
+    <node id="n11" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">v15</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n11:" edgedefault="directed">
+        <node id="n11::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n11::n0:" edgedefault="directed">
+            <node id="n11::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n11::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n11::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n11::n0::n2:" edgedefault="directed">
+                <node id="n11::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n11::n0::n2::n1">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n11::n0::n2::n2">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#CC99FF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">ChangeState</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n11::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n11::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">Shc</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n11::n1:" edgedefault="directed">
+            <node id="n11::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n11::n1::n1" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n11::n1::n1:" edgedefault="directed">
+                <node id="n11::n1::n1::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+          </graph>
+        </node>
+        <node id="n11::n2" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n11::n2:" edgedefault="directed">
+            <node id="n11::n2::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n11::n3">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">DeleteBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n12" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">_reverse_v15</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n12:" edgedefault="directed">
+        <node id="n12::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGFR</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n12::n0:" edgedefault="directed">
+            <node id="n12::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n12::n0::n1">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egf</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n12::n0::n2" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n12::n0::n2:" edgedefault="directed">
+                <node id="n12::n0::n2::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n12::n0::n2::n1">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n12::n0::n2::n2">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#CC99FF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">ChangeState</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+            <node id="n12::n0::n3">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">shc</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n12::n1" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">EGF</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n12::n1:" edgedefault="directed">
+            <node id="n12::n1::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+          </graph>
+        </node>
+        <node id="n12::n2" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">Shc</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n12::n2:" edgedefault="directed">
+            <node id="n12::n2::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n12::n2::n1" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n12::n2::n1:" edgedefault="directed">
+                <node id="n12::n2::n1::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+          </graph>
+        </node>
+        <node id="n12::n3">
+          <data key="d0">
+            <y:ShapeNode>
+              <y:Fill color="#CC99FF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="ellipse"/>
+              <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">AddBond</y:NodeLabel>
+            </y:ShapeNode>
+          </data>
+        </node>
+      </graph>
+    </node>
+    <node id="n13" yfiles.foldertype="group">
+      <data key="d0">
+        <y:ProxyAutoBoundsNode>
+          <y:Realizers active="0">
+            <y:GroupNode>
+              <y:Fill color="#FFFFFF"/>
+              <y:BorderStyle color="#999999" type="line" width="1"/>
+              <y:Shape type="roundrectangle"/>
+              <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">v16</y:NodeLabel>
+            </y:GroupNode>
+          </y:Realizers>
+        </y:ProxyAutoBoundsNode>
+      </data>
+      <graph id="n13:" edgedefault="directed">
+        <node id="n13::n0" yfiles.foldertype="group">
+          <data key="d0">
+            <y:ProxyAutoBoundsNode>
+              <y:Realizers active="0">
+                <y:GroupNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">Shc</y:NodeLabel>
+                </y:GroupNode>
+              </y:Realizers>
+            </y:ProxyAutoBoundsNode>
+          </data>
+          <graph id="n13::n0:" edgedefault="directed">
+            <node id="n13::n0::n0">
+              <data key="d0">
+                <y:ShapeNode>
+                  <y:Fill color="#EFEFEF"/>
+                  <y:BorderStyle color="#999999" type="line" width="1"/>
+                  <y:Shape type="ellipse"/>
+                  <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">egfr</y:NodeLabel>
+                </y:ShapeNode>
+              </data>
+            </node>
+            <node id="n13::n0::n1" yfiles.foldertype="group">
+              <data key="d0">
+                <y:ProxyAutoBoundsNode>
+                  <y:Realizers active="0">
+                    <y:GroupNode>
+                      <y:Fill color="#EFEFEF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="t" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">p</y:NodeLabel>
+                    </y:GroupNode>
+                  </y:Realizers>
+                </y:ProxyAutoBoundsNode>
+              </data>
+              <graph id="n13::n0::n1:" edgedefault="directed">
+                <node id="n13::n0::n1::n0">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">P</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n13::n0::n1::n1">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#FFF0A7"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">0</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+                <node id="n13::n0::n1::n2">
+                  <data key="d0">
+                    <y:ShapeNode>
+                      <y:Fill color="#CC99FF"/>
+                      <y:BorderStyle color="#999999" type="line" width="1"/>
+                      <y:Shape type="ellipse"/>
+                      <y:NodeLabel alignment="c" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true">ChangeState</y:NodeLabel>
+                    </y:ShapeNode>
+                  </data>
+                </node>
+              </graph>
+            </node>
+          </graph>
+        </node>
+      </graph>
+    </node>
+    <edge id="n2::n0::n1::e0" source="n2::n0::n1" target="n2::n1::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n2::n2::n1::e0" source="n2::n2::n1" target="n2::n3::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n3::n0::n1::e0" source="n3::n0::n1" target="n3::n1::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n3::n2::n1::e0" source="n3::n2::n1" target="n3::n3::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n7::n1::n1::e0" source="n7::n1::n1" target="n7::n2::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n8::n0::n1::e0" source="n8::n0::n1" target="n8::n2::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n9::n0::n1::e0" source="n9::n0::n1" target="n9::n2::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n9::n0::n3::e0" source="n9::n0::n3" target="n9::n1::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n10::n0::n1::e0" source="n10::n0::n1" target="n10::n2::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n10::n0::n3::e0" source="n10::n0::n3" target="n10::n1::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n11::n0::n1::e0" source="n11::n0::n1" target="n11::n2::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n12::n0::n1::e0" source="n12::n0::n1" target="n12::n1::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#999999" type="line" width="1"/>
+        <y:Arrows source="none" target="none"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n0::n2::e0" source="n0::n2" target="n0::n0::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n0::n2::e1" source="n0::n2" target="n0::n1::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n1::n0::n1::e0" source="n1::n0::n1" target="n1::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n1::n1::n0::e0" source="n1::n1::n0" target="n1::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n2::n4::e0" source="n2::n4" target="n2::n0::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n2::n4::e1" source="n2::n4" target="n2::n2::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n3::n0::n0::e0" source="n3::n0::n0" target="n3::n4">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n3::n2::n0::e0" source="n3::n2::n0" target="n3::n4">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n4::n0::n2::n0::e0" source="n4::n0::n2::n0" target="n4::n0::n2::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n4::n0::n2::n2::e0" source="n4::n0::n2::n2" target="n4::n0::n2::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n4::n0::n0::e0" source="n4::n0::n0" target="n4::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n4::n1::n0::e0" source="n4::n1::n0" target="n4::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n4::n1::e0" source="n4::n1" target="n4::n4">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n4::n5::e0" source="n4::n5" target="n4::n0::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n4::n5::e1" source="n4::n5" target="n4::n2::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n4::n6::e0" source="n4::n6" target="n4::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n5::n0::n2::n0::e0" source="n5::n0::n2::n0" target="n5::n0::n2::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n5::n0::n2::n2::e0" source="n5::n0::n2::n2" target="n5::n0::n2::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n5::n0::n1::e0" source="n5::n0::n1" target="n5::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n5::n1::n0::e0" source="n5::n1::n0" target="n5::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n5::n1::e0" source="n5::n1" target="n5::n4">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n5::n5::e0" source="n5::n5" target="n5::n0::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n5::n5::e1" source="n5::n5" target="n5::n2::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n5::n6::e0" source="n5::n6" target="n5::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n6::n0::n2::n0::e0" source="n6::n0::n2::n0" target="n6::n0::n2::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n6::n0::n2::n2::e0" source="n6::n0::n2::n2" target="n6::n0::n2::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n6::n0::n1::e0" source="n6::n0::n1" target="n6::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n6::n1::n0::e0" source="n6::n1::n0" target="n6::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n6::n1::e0" source="n6::n1" target="n6::n4">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n6::n5::e0" source="n6::n5" target="n6::n0::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n6::n5::e1" source="n6::n5" target="n6::n2::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n6::n6::e0" source="n6::n6" target="n6::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n7::n3::e0" source="n7::n3" target="n7::n0::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n7::n3::e1" source="n7::n3" target="n7::n1::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n8::n0::n3::e0" source="n8::n0::n3" target="n8::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n8::n1::n0::e0" source="n8::n1::n0" target="n8::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n9::n0::n2::n0::e0" source="n9::n0::n2::n0" target="n9::n0::n2::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n9::n0::n2::n2::e0" source="n9::n0::n2::n2" target="n9::n0::n2::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n9::n1::n1::n0::e0" source="n9::n1::n1::n0" target="n9::n1::n1::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n9::n1::n1::n2::e0" source="n9::n1::n1::n2" target="n9::n1::n1::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n10::n0::n2::n0::e0" source="n10::n0::n2::n0" target="n10::n0::n2::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n10::n0::n2::n2::e0" source="n10::n0::n2::n2" target="n10::n0::n2::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n10::n1::n1::n0::e0" source="n10::n1::n1::n0" target="n10::n1::n1::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n10::n1::n1::n2::e0" source="n10::n1::n1::n2" target="n10::n1::n1::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n11::n0::n2::n0::e0" source="n11::n0::n2::n0" target="n11::n0::n2::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n11::n0::n2::n2::e0" source="n11::n0::n2::n2" target="n11::n0::n2::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n11::n0::n3::e0" source="n11::n0::n3" target="n11::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n11::n1::n0::e0" source="n11::n1::n0" target="n11::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n12::n0::n2::n0::e0" source="n12::n0::n2::n0" target="n12::n0::n2::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n12::n0::n2::n2::e0" source="n12::n0::n2::n2" target="n12::n0::n2::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n12::n3::e0" source="n12::n3" target="n12::n0::n3">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n12::n3::e1" source="n12::n3" target="n12::n2::n0">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n13::n0::n1::n0::e0" source="n13::n0::n1::n0" target="n13::n0::n1::n2">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+    <edge id="n13::n0::n1::n2::e0" source="n13::n0::n1::n2" target="n13::n0::n1::n1">
+    <data key="d1">
+      <y:PolyLineEdge>
+        <y:LineStyle color="#000000" type="line" width="1"/>
+        <y:Arrows source="none" target="standard"/>
+        <y:BendStyle smoothed="false"/>
+      </y:PolyLineEdge>
+    </data>
+    </edge>
+  </graph>
+</graphml>
