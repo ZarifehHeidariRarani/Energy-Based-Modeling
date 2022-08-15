@@ -1,0 +1,10 @@
+BioNetGen version 2.8.3
+Reading from file /Users/faeder/Library/CloudStorage/OneDrive-UniversityofPittsburgh/Projects/Energy-Based-Modeling/EGFR Model/Step1/Step1/2022_08_14__21_38_46/Step1.bngl (level 0)
+Read 20 parameters.
+Read 3 molecule types.
+Read 3 species.
+Read 4 energy patterns(s).
+Read 5 observable(s).
+Read 2 functions.
+ERROR: Molecule created in reaction rule: Component(s) egf egfr p grb2 missing from molecule EGFR(shc!1)
+at line 80

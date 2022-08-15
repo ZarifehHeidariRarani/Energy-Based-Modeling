@@ -67,9 +67,9 @@ end functions
 
 begin reaction rules
     # Ligand-receptor binding 
-  v1: EGFR(egfr,egf,shc) + EGF(egfr) <-> EGFR(egfr,egf!1,shc).EGF(egfr!1) Arrhenius(phi,Ea_LR) 
-    # Receptor-aggregation (JIM: This rule is restrictive because only unphosphorylated receptors can undimerize.)
-  v2: EGFR(egfr,egf!+,shc~0) + EGFR(egfr,egf!+,shc~0) <-> EGFR(egfr!1,egf!+,shc~0).EGFR(egfr!1,egf!+,shc~0) Arrhenius(phi,Ea_RR)
+  v1: EGFR(egfr,egf,shc~P) + EGF(egfr) <-> EGFR(egfr,egf!1,shc~P).EGF(egfr!1) Arrhenius(phi,Ea_LR) 
+    # Receptor-aggregation
+  v2: EGFR(egfr,egf!+,shc) + EGFR(egfr,egf!+,shc) <-> EGFR(egfr!1,egf!+,shc).EGFR(egfr!1,egf!+,shc) Arrhenius(phi,Ea_RR)
     # Transphosphorylation of Egfr in dimer (bound at egfr)
   v3: EGFR(egfr!+,shc~0) -> EGFR(egfr!+,shc~P) r3_k3f 
     # Dephosphorylation by phosphotase (probably don't need both rates)
@@ -89,7 +89,7 @@ end model
 #generate_network({overwrite=>1,TextReaction=>0,print_iter=>0,max_iter=>99})
 generate_network({overwrite=>1})
 #writeNetwork({evaluate_expressions=>1,overwrite=>1})
-simulate({method=>"ode",t_end=>120,n_steps=>120})
+#simulate({method=>"ode",t_end=>120,n_steps=>120})
 
 
 

@@ -10,7 +10,7 @@ begin parameters
   r4_K4    50.0
   # Shc Parameters
   r14_k14f 6.0
-  r14_k14b 0.06
+  r14_k14b 6 #0.06
   r15_k15f 0.3
   r15_k15b 0.0009
   r16_V16  1.7

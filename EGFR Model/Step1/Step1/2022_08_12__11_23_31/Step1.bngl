@@ -1,0 +1,95 @@
+
+#This model is the energy-based model of the kholodenko model 1999
+begin model
+begin parameters
+  #Kholodenko parameters
+  #EGF,EGFR Parameters - ## NEED TO SPECIFY UNITS (conc: nM) 
+  r3_k3f   1.0
+  r3_k3b   0.01
+  r4_V4    450.0
+  r4_K4    50.0
+  # Shc Parameters
+  r14_k14f 6.0
+  r14_k14b 0.06
+  r15_k15f 0.3
+  r15_k15b 0.0009
+  r16_V16  1.7
+  r16_K16  340.0
+  #Free Energies ## WHAT UNITS?
+  Gf_LR    2.9957
+  Gf_RR    2.3026
+  Gf_RSh   1.8971
+  Gf_LRR   10.8505 
+  Gf_LRRL  -15.7
+  Gf_RShP  10.3939 
+  #rate distribution parameter, no units
+  phi      0.5
+  #Activation Energies
+  Ea_LR    4.3113
+  Ea_RR    3.4539
+  Ea_RSh   1.4594
+end parameters
+
+begin molecule types
+  EGF(egfr)
+  EGFR(egf,egfr,p~P~0,shc,grb2)
+  Shc(egfr,p~P~0)
+end molecule types
+
+begin seed species
+  EGF(egfr)                    680 
+  EGFR(egf,egfr,p~0,shc,grb2) 100.0
+  Shc(egfr,p~0)               150.0
+end seed species
+
+begin energy patterns
+  EGFR(egf!0).EGF(egfr!0)                                        Gf_LR
+  EGFR(egfr!1).EGFR(egfr!1)                                      Gf_RR+ 2*Gf_LRR + Gf_LRRL
+  EGFR(p~P,shc!2).Shc(egfr!2)                                    Gf_RSh
+  EGFR(p~P,shc!2).Shc(egfr!2,p~P)                                Gf_RShP
+end energy patterns
+
+begin observables
+#  Molecules EGF EGF()
+#  Molecules EGFR EGFR()
+#  Molecules Shc Shc()
+  Molecules Dimers EGFR(egfr!+)
+  Species EGF_EGFR2_P     EGFR(egfr,egf!1,p~P,shc).EGF(egfr!1)    #RP in Kholodenko's paper
+  Species Shc_P           Shc(egfr,p~P)                           #ShP in Kholodenko's paper
+  Molecules EGFRPtotal    EGFR(p~P),EGFR(p~P)
+  Molecules ShPtotal      Shc(p~P) 
+end observables                   
+
+begin functions                                              
+  fRate3()  = r4_V4 /(EGF_EGFR2_P +r4_K4)
+  fRate15() = r16_V16 /(Shc_P+r16_K16)
+end functions
+
+begin reaction rules
+    # Ligand-receptor binding 
+  v1: EGFR(egfr,egf,p~0,shc,grb2) + EGF(egfr) <-> EGFR(egfr,egf!1,p~0,shc,grb2).EGF(egfr!1) Arrhenius(phi,Ea_LR) 
+    # Receptor-aggregation
+  v2: EGFR(egfr,egf!1,p~0,shc,grb2).EGF(egfr!1) + EGFR(egfr,egf!1,p~0,shc,grb2).EGF(egfr!1) <-> EGFR(egfr!1,egf,p~0,shc,grb2).EGFR(egfr!1,egf,p~0,shc,grb2) Arrhenius(phi,Ea_RR)
+    # Transphosphorylation of Egfr
+  # v3: EGFR(egfr!1,egf,p~0,shc,grb2).EGFR(egfr!1,egf,p~0,shc,grb2) <-> EGFR(egfr,egf!1,p~P,shc,grb2).EGF(egfr!1) r3_k3f,r3_k3b 
+  #   # Dephosphorylayion by phosphotase
+  # v4: EGFR(egfr,egf!1,p~P,shc,grb2).EGF(egfr!1) -> EGFR(egfr!1,egf,p~0,shc,grb2).EGFR(egfr!1,egf,p~0,shc,grb2) fRate3
+  #   # Egfr + Shc
+  # v13: Shc(egfr) + EGFR(egfr,egf!1,p~P,shc,grb2).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc!2,grb2).Shc(egfr!2).EGF(egfr!1) Arrhenius(phi,Ea_RSh) 
+  #   # Shc transphos
+  # v14: EGFR(egfr,egf!1,p~P,shc!2,grb2).Shc(egfr!2,p~0).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~0,shc!2,grb2).Shc(egfr!2,p~P).EGF(egfr!1)  r14_k14f,r14_k14b 
+  #   # RShcP phosphorylation break apart 
+  # v15: EGFR(egfr,egf!1,p~0,shc!2,grb2).Shc(egfr!2,p~P).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc,grb2).EGF(egfr!1) + Shc(egfr,p~P) r15_k15f,r15_k15b
+  #   # Dephosphorylayion of Shc by phosphotase
+  # v16: Shc(egfr,p~P) -> Shc(egfr,p~0) fRate15
+end reaction rules
+
+end model
+
+#generate_network({overwrite=>1,TextReaction=>0,print_iter=>0,max_iter=>99})
+generate_network({overwrite=>1})
+writeNetwork({evaluate_expressions=>1})
+#simulate({method=>"ode",t_end=>120,n_steps=>120})
+
+
+

@@ -1,0 +1,52 @@
+BioNetGen version 2.8.0
+Reading from file /Users/faeder/Library/CloudStorage/OneDrive-UniversityofPittsburgh/Projects/Energy-Based-Modeling/EGFR Model/Step1/EGFR_Kholodenko_Step1/2022_08_12__14_54_54/EGFR_Kholodenko_Step1.bngl (level 0)
+Read 16 parameters.
+Read 3 molecule types.
+Read 3 species.
+Read 4 observable(s).
+Read 2 functions.
+Read 8 reaction rule(s).
+ACTION: simulate( method=>"cvode" )
+ACTION: generate_network( EGFR_Kholodenko_Step1 )
+Iteration   0:     3 species      0 rxns  0.00e+00 CPU s
+Iteration   1:     4 species      1 rxns  0.00e+00 CPU s
+Iteration   2:     5 species      3 rxns  0.00e+00 CPU s
+Iteration   3:     6 species      5 rxns  1.00e-02 CPU s
+Iteration   4:     7 species      8 rxns  0.00e+00 CPU s
+Iteration   5:     8 species     10 rxns  0.00e+00 CPU s
+Iteration   6:     9 species     12 rxns  0.00e+00 CPU s
+Iteration   7:     9 species     14 rxns  0.00e+00 CPU s
+Cumulative CPU time for each rule
+Rule   1:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   2:     2 reactions 1.00e-02 CPU s 5.00e-03 CPU s/rxn
+Rule   3:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   4:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   5:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   6:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   7:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   8:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Total   :    14 reactions 1.00e-02 CPU s 7.14e-04 CPU s/rxn
+Wrote network in net format to ./EGFR_Kholodenko_Step1.net.
+Network simulation using cvode
+WARNING: writeFile(): Overwriting existing file ./EGFR_Kholodenko_Step1.net.
+Wrote network in net format to ./EGFR_Kholodenko_Step1.net.
+Running run_network on vela.csb.pitt.edu
+full command: /Users/faeder/opt/anaconda3/lib/python3.8/site-packages/bionetgen/bng-mac/bin/run_network -o ./EGFR_Kholodenko_Step1 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g ./EGFR_Kholodenko_Step1.net ./EGFR_Kholodenko_Step1.net 1 120
+[simulation PID is: 57915]
+run_network 3.0
+Read 19 parameters from ./EGFR_Kholodenko_Step1.net
+Read 9 species from ./EGFR_Kholodenko_Step1.net
+Read 4 group(s) from ./EGFR_Kholodenko_Step1.net
+Read 2 function(s) from ./EGFR_Kholodenko_Step1.net
+Read 14 reaction(s) from ./EGFR_Kholodenko_Step1.net
+14 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file ./EGFR_Kholodenko_Step1.cdat.
+Time course of groups written to file ./EGFR_Kholodenko_Step1.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from ./EGFR_Kholodenko_Step1.cdat
+CPU TIME: simulate 0.03 s.
+Finished processing file /Users/faeder/Library/CloudStorage/OneDrive-UniversityofPittsburgh/Projects/Energy-Based-Modeling/EGFR Model/Step1/EGFR_Kholodenko_Step1/2022_08_12__14_54_54/EGFR_Kholodenko_Step1.bngl.
+CPU TIME: total 0.05 s.

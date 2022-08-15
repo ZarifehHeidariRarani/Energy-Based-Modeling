@@ -1,0 +1,44 @@
+# Created by BioNetGen 2.8.3
+begin parameters
+    1 r1_k1f       0.003  # Constant
+    2 r1_k1b       0.06  # Constant
+    3 r2_k2f       0.01  # Constant
+    4 r2_k2b       0.1  # Constant
+    5 r3_k3f       1.0  # Constant
+    6 r3_k3b       0.01  # Constant
+    7 r4_V4        450.0  # Constant
+    8 r4_K4        50.0  # Constant
+    9 r13_k13f     0.09  # Constant
+   10 r13_k13b     0.6  # Constant
+   11 r14_k14f     6.0  # Constant
+   12 r14_k14b     0.06  # Constant
+   13 r15_k15f     0.3  # Constant
+   14 r15_k15b     0.0009  # Constant
+   15 r16_V16      1.7  # Constant
+   16 r16_K16      340.0  # Constant
+   17 _rateLaw1    2*r2_k2f  # ConstantExpression
+end parameters
+begin functions
+    1 fRate3() r4_V4/(EGF_EGFR2_P+r4_K4)
+    2 fRate15() r16_V16/(Shc_P+r16_K16)
+end functions
+begin species
+    1 EGF() 680
+    2 EGFR() 100.0
+    3 Shc() 150.0
+    4 Ra() 0
+    5 R2() 0
+end species
+begin reactions
+    1 1,2 4 r1_k1f #v1
+    2 4 1,2 r1_k1b #_reverse_v1
+    3 4,4 5 0.5*_rateLaw1 #v2
+    4 5 4,4 r2_k2b #_reverse_v2
+end reactions
+begin groups
+    1 Dimers               2*5
+    2 EGF_EGFR2_P          
+    3 Shc_P                
+    4 EGFRPtotal           
+    5 ShPtotal             
+end groups

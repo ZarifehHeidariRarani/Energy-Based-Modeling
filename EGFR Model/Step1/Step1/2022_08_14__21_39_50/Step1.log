@@ -1,0 +1,35 @@
+BioNetGen version 2.8.3
+Reading from file /Users/faeder/Library/CloudStorage/OneDrive-UniversityofPittsburgh/Projects/Energy-Based-Modeling/EGFR Model/Step1/Step1/2022_08_14__21_39_50/Step1.bngl (level 0)
+Read 20 parameters.
+Read 3 molecule types.
+Read 3 species.
+Read 4 energy patterns(s).
+Read 5 observable(s).
+Read 2 functions.
+Read 7 reaction rule(s).
+ACTION: generate_network( Step1 )
+Iteration   0:     3 species      0 rxns  0.00e+00 CPU s
+Iteration   1:     4 species      1 rxns  1.00e-02 CPU s
+Iteration   2:     5 species      3 rxns  0.00e+00 CPU s
+Iteration   3:     6 species      5 rxns  0.00e+00 CPU s
+Iteration   4:     8 species      8 rxns  0.00e+00 CPU s
+Iteration   5:    10 species     13 rxns  1.00e-02 CPU s
+Iteration   6:    13 species     19 rxns  1.00e-02 CPU s
+Iteration   7:    15 species     29 rxns  1.00e-02 CPU s
+Iteration   8:    15 species     33 rxns  0.00e+00 CPU s
+Cumulative CPU time for each rule
+Rule   1:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   2:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   3:     4 reactions 1.00e-02 CPU s 2.50e-03 CPU s/rxn
+Rule   4:     4 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   5:    16 reactions 2.00e-02 CPU s 1.25e-03 CPU s/rxn
+Rule   6:     4 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   7:     1 reactions 1.00e-02 CPU s 1.00e-02 CPU s/rxn
+Total   :    33 reactions 4.00e-02 CPU s 1.21e-03 CPU s/rxn
+Wrote network in net format to ./Step1.net.
+CPU TIME: generate_network 0.05 s.
+WARNING: writeFile(): Overwriting existing file ./Step1.net.
+Wrote network in net format to ./Step1.net.
+CPU TIME: writeNetwork 0.00 s.
+Finished processing file /Users/faeder/Library/CloudStorage/OneDrive-UniversityofPittsburgh/Projects/Energy-Based-Modeling/EGFR Model/Step1/Step1/2022_08_14__21_39_50/Step1.bngl.
+CPU TIME: total 0.06 s.

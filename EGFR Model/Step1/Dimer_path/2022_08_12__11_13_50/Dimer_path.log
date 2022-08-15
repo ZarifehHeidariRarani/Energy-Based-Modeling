@@ -1,0 +1,41 @@
+BioNetGen version 2.8.3
+Reading from file /Users/faeder/Library/CloudStorage/OneDrive-UniversityofPittsburgh/Projects/Energy-Based-Modeling/EGFR Model/Step1/Dimer_path/2022_08_12__11_13_50/Dimer_path.bngl (level 0)
+Read 16 parameters.
+Read 3 species.
+Read 5 observable(s).
+Read 2 functions.
+Read 2 reaction rule(s).
+ACTION: simulate( method=>"cvode" )
+ACTION: generate_network( Dimer_path )
+Iteration   0:     3 species      0 rxns  0.00e+00 CPU s
+Iteration   1:     4 species      1 rxns  0.00e+00 CPU s
+Iteration   2:     5 species      3 rxns  0.00e+00 CPU s
+Iteration   3:     5 species      4 rxns  0.00e+00 CPU s
+Cumulative CPU time for each rule
+Rule   1:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   2:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Total   :     4 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Wrote network in net format to ./Dimer_path.net.
+Network simulation using cvode
+WARNING: writeFile(): Overwriting existing file ./Dimer_path.net.
+Wrote network in net format to ./Dimer_path.net.
+Running run_network on Jamess-MBP
+full command: /Users/faeder/Library/CloudStorage/OneDrive-UniversityofPittsburgh/Code/PyBioNetGen/bionetgen/bng-mac/bin/run_network -o ./Dimer_path -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g ./Dimer_path.net ./Dimer_path.net 1 120
+[simulation PID is: 47286]
+run_network 3.0
+Read 17 parameters from ./Dimer_path.net
+Read 5 species from ./Dimer_path.net
+Read 5 group(s) from ./Dimer_path.net
+Read 2 function(s) from ./Dimer_path.net
+Read 4 reaction(s) from ./Dimer_path.net
+4 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file ./Dimer_path.cdat.
+Time course of groups written to file ./Dimer_path.gdat.
+Propagation took 0.00e+00 CPU seconds
+Program times:  0.00 CPU s 0.00 clock s
+Updating species concentrations from ./Dimer_path.cdat
+CPU TIME: simulate 0.01 s.
+Finished processing file /Users/faeder/Library/CloudStorage/OneDrive-UniversityofPittsburgh/Projects/Energy-Based-Modeling/EGFR Model/Step1/Dimer_path/2022_08_12__11_13_50/Dimer_path.bngl.
+CPU TIME: total 0.01 s.
