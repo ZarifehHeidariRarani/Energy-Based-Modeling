@@ -1,0 +1,59 @@
+#This model is inferred from kholodenko model (biomodel)
+begin model
+begin parameters
+  r1_k1f   0.003
+  r1_k1b   0.06
+  r2_k2f   0.01
+  r2_k2b   0.1
+  r3_k3f   1.0
+  r3_k3b   0.01
+  r4_V4    450.0
+  r4_K4    50.0
+  r13_k13f 0.09
+  r13_k13b 0.6
+  r14_k14f 6.0
+  r14_k14b 0.06
+  r15_k15f 0.3
+  r15_k15b 0.0009
+  r16_V16  1.7
+  r16_K16  340.0
+end parameters
+
+begin molecule types
+  EGF(egfr)
+  EGFR(egf,egfr,p~P~0,shc)
+  Shc(egfr,p~P~0)
+end molecule types
+
+begin seed species
+  EGF(egfr)                   680 #nM
+  EGFR(egf,egfr,p~0,shc)      100.0 #nM
+  Shc(egfr,p~0)               150.0 #nM
+end seed species
+
+begin observables
+  Species EGF_EGFR2_P     EGFR(egfr,egf!1,p~P,shc).EGF(egfr!1)  #RP in Kholodenko's paper
+  Species Shc_P           Shc(egfr,p~P)                           #ShP in Kholodenko's paper
+  Molecules EGFRPtotal    EGFR(p~P),EGFR(p~P)
+  Molecules ShPtotal      Shc(p~P) 
+end observables   
+
+begin functions                                              
+  fRate3() = r4_V4 /(EGF_EGFR2_P +r4_K4)
+  fRate15() = r16_V16 /(Shc_P+r16_K16)
+end functions
+
+begin reaction rules
+  v1:  EGFR(egfr,egf,p~0,shc) + EGF(egfr) <-> EGFR(egfr,egf!1,p~0,shc).EGF(egfr!1) r1_k1f,r1_k1b
+  v2:  EGFR(egfr,egf!1,p~0,shc).EGF(egfr!1) + EGFR(egfr,egf!1,p~0,shc).EGF(egfr!1) <-> EGFR(egfr!1,egf,p~0,shc).EGFR(egfr!1,egf,p~0,shc) 2*r2_k2f,0.5*r2_k2b
+  v3:  EGFR(egfr!1,egf,p~0,shc).EGFR(egfr!1,egf,p~0,shc) <-> EGFR(egfr,egf!1,p~P,shc).EGF(egfr!1) 0.5*r3_k3f,r3_k3b
+  v4:  EGFR(egfr,egf!1,p~P,shc).EGF(egfr!1) -> EGFR(egfr!1,egf,p~0,shc).EGFR(egfr!1,egf,p~0,shc) fRate3
+  v13: Shc(egfr,p~0) + EGFR(egfr,egf!1,p~P,shc).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc!2).Shc(egfr!2,p~0).EGF(egfr!1) r13_k13f,r13_k13b
+  v14: EGFR(egfr,egf!1,p~P,shc!2).Shc(egfr!2,p~0).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc!2).Shc(egfr!2,p~P).EGF(egfr!1) r14_k14f,r14_k14b
+  v15: EGFR(egfr,egf!1,p~P,shc!2).Shc(egfr!2,p~P).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc).EGF(egfr!1) + Shc(egfr,p~P) r15_k15f,r15_k15b
+  v16: Shc(egfr,p~P) -> Shc(egfr,p~0) fRate15
+end reaction rules
+
+end model
+
+simulate({method=>"ode",t_end=>120,n_steps=>1200})

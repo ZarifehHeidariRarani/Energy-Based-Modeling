@@ -1,0 +1,116 @@
+# Created by BioNetGen 2.8.3
+begin parameters
+    1 r1_k1f         0.003  # Constant
+    2 r1_k1b         0.06  # Constant
+    3 r2_k2f         0.01  # Constant
+    4 r2_k2b         0.1  # Constant
+    5 r3_k3f         1.0  # Constant
+    6 r3_k3b         0.01  # Constant
+    7 r4_V4          450.0  # Constant
+    8 r4_K4          50.0  # Constant
+    9 r9_k9f         0.003  # Constant
+   10 r9_k9b         0.05  # Constant
+   11 r10_k10f       0.01  # Constant
+   12 r10_k10b       0.06  # Constant
+   13 r11_k11f       0.03  # Constant
+   14 r11_k11b       0.0045  # Constant
+   15 r12_k12f       0.0015  # Constant
+   16 r12_k12b       0.0001  # Constant
+   17 r13_k13f       0.09  # Constant
+   18 r13_k13b       0.6  # Constant
+   19 r14_k14f       6.0  # Constant
+   20 r14_k14b       0.06  # Constant
+   21 r15_k15f       0.3  # Constant
+   22 r15_k15b       0.0009  # Constant
+   23 r16_V16        1.7  # Constant
+   24 r16_K16        340.0  # Constant
+   25 r17_k17f       0.003  # Constant
+   26 r17_k17b       0.1  # Constant
+   27 r18_k18f       0.3  # Constant
+   28 r18_k18b       0.0009  # Constant
+   29 r19_k19f       0.01  # Constant
+   30 r19_k19b       0.0214  # Constant
+   31 r20_k20f       0.12  # Constant
+   32 r20_k20b       0.00024  # Constant
+   33 r21_k21f       0.003  # Constant
+   34 r21_k21b       0.1  # Constant
+   35 r22_k22f       0.03  # Constant
+   36 r22_k22b       0.064  # Constant
+   37 r23_k23f       0.1  # Constant
+   38 r23_k23b       0.021  # Constant
+   39 r24_k24f       0.009  # Constant
+   40 r24_k24b       0.0429  # Constant
+   41 _rateLaw1      2*r2_k2f  # ConstantExpression
+end parameters
+begin functions
+    1 fRate3() r4_V4/(EGF_EGFR2_P+r4_K4)
+    2 fRate15() r16_V16/(Shc_P+r16_K16)
+end functions
+begin species
+    1 EGF() 680
+    2 EGFR() 100.0
+    3 Shc() 150.0
+    4 Grb2() 85
+    5 SOS() 34
+    6 Ra() 0
+    7 G_S() 0
+    8 R2() 0
+    9 RP() 0
+   10 R_G() 0
+   11 R_GS() 0
+   12 R_Sh() 0
+   13 R_ShP() 0
+   14 ShP() 0
+   15 R_Sh_G() 0
+   16 R_Sh_GS() 0
+   17 Sh_G() 0
+   18 Sh_GS() 0
+end species
+begin reactions
+    1 1,2 6 r1_k1f #v1
+    2 4,5 7 r12_k12b #_reverse_v12
+    3 6 1,2 r1_k1b #_reverse_v1
+    4 6,6 8 0.5*_rateLaw1 #v2
+    5 7 4,5 r12_k12f #v12
+    6 8 6,6 r2_k2b #_reverse_v2
+    7 8 9 r3_k3f #v3
+    8 9 8 r3_k3b #_reverse_v3
+    9 9 8 fRate3 #v4
+   10 4,9 10 r9_k9f #v9
+   11 7,9 11 r11_k11b #_reverse_v11
+   12 3,9 12 r13_k13f #v13
+   13 10 4,9 r9_k9b #_reverse_v9
+   14 5,10 11 r10_k10f #v10
+   15 11 5,10 r10_k10b #_reverse_v10
+   16 11 7,9 r11_k11f #v11
+   17 12 3,9 r13_k13b #_reverse_v13
+   18 12 13 r14_k14f #v14
+   19 13 12 r14_k14b #_reverse_v14
+   20 13 9,14 r15_k15f #v15
+   21 4,13 15 r17_k17f #v17
+   22 7,13 16 r24_k24f #v24
+   23 9,14 13 r15_k15b #_reverse_v15
+   24 14 3 fRate15 #v16
+   25 15 4,13 r17_k17b #_reverse_v17
+   26 15 9,17 r18_k18f #v18
+   27 5,15 16 r19_k19f #v19
+   28 16 5,15 r19_k19b #_reverse_v19
+   29 16 9,18 r20_k20f #v20
+   30 4,14 17 r21_k21f #v21
+   31 7,14 18 r23_k23b #_reverse_v23
+   32 16 7,13 r24_k24b #_reverse_v24
+   33 9,17 15 r18_k18b #_reverse_v18
+   34 9,18 16 r20_k20b #_reverse_v20
+   35 17 4,14 r21_k21b #_reverse_v21
+   36 5,17 18 r22_k22f #v22
+   37 18 5,17 r22_k22b #_reverse_v22
+   38 18 7,14 r23_k23f #v23
+end reactions
+begin groups
+    1 EGF_EGFR2_P          9
+    2 Shc_P                14
+    3 EGFRPtotal           2*9,2*10,2*11,2*12,2*13,2*15,2*16
+    4 ShPtotal             13,14,15,16,17,18
+    5 Grb2EGFRtotal        10,11,15,16
+    6 Grb2Shctotal         15,16,17,18
+end groups

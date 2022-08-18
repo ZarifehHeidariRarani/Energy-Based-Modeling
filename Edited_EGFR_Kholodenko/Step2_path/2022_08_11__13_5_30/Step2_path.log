@@ -1,0 +1,55 @@
+BioNetGen version 2.8.3
+Reading from file d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.bngl (level 0)
+Read 24 parameters.
+Read 5 species.
+Read 5 observable(s).
+Read 2 functions.
+Read 12 reaction rule(s).
+ACTION: simulate( method=>"cvode" )
+ACTION: generate_network( d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path )
+Iteration   0:     5 species      0 rxns  0.00e+00 CPU s
+Iteration   1:     7 species      2 rxns  0.00e+00 CPU s
+Iteration   2:     8 species      5 rxns  0.00e+00 CPU s
+Iteration   3:     9 species      7 rxns  1.50e-02 CPU s
+Iteration   4:    12 species     12 rxns  0.00e+00 CPU s
+Iteration   5:    13 species     18 rxns  1.60e-02 CPU s
+Iteration   6:    14 species     20 rxns  1.60e-02 CPU s
+Iteration   7:    14 species     22 rxns  0.00e+00 CPU s
+Cumulative CPU time for each rule
+Rule   1:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   2:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   3:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   4:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   5:     2 reactions 3.10e-02 CPU s 1.55e-02 CPU s/rxn
+Rule   6:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   7:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   8:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   9:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  10:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  11:     2 reactions 1.60e-02 CPU s 8.00e-03 CPU s/rxn
+Rule  12:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Total   :    22 reactions 4.70e-02 CPU s 2.14e-03 CPU s/rxn
+Wrote network in net format to d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.net.
+Network simulation using cvode
+WARNING: writeFile(): Overwriting existing file d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.net.
+Wrote network in net format to d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.net.
+Running run_network on mansour-PC
+full command: c:/users/mansour/lib/site-packages/bionetgen/bng-win/bin/run_network -o d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.net d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.net 1 120
+[simulation PID is: 40]
+run_network 3.0
+Read 25 parameters from d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.net
+Read 14 species from d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.net
+Read 5 group(s) from d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.net
+Read 2 function(s) from d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.net
+Read 22 reaction(s) from d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.net
+22 reaction(s) have nonzero rate
+Initialization took 0.01 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.cdat.
+Time course of groups written to file d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.gdat.
+Propagation took 6.20e-02 CPU seconds
+Program times:  0.08 CPU s 0.00 clock s
+Updating species concentrations from d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.cdat
+CPU TIME: simulate 0.20 s.
+Finished processing file d:\Energy modeling\Corrections\Jim's edit\Step2_path\2022_08_11__13_5_30\Step2_path.bngl.
+CPU TIME: total 0.29 s.

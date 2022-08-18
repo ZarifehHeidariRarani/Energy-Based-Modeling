@@ -1,0 +1,65 @@
+BioNetGen version 2.8.3
+Reading from file d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.bngl (level 0)
+Read 40 parameters.
+Read 5 molecule types.
+Read 5 species.
+Read 6 observable(s).
+Read 2 functions.
+Read 20 reaction rule(s).
+ACTION: simulate( method=>"cvode" )
+ACTION: generate_network( d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3 )
+Iteration   0:     5 species      0 rxns  0.00e+00 CPU s
+Iteration   1:     7 species      2 rxns  1.50e-02 CPU s
+Iteration   2:     8 species      5 rxns  0.00e+00 CPU s
+Iteration   3:     9 species      7 rxns  1.60e-02 CPU s
+Iteration   4:    12 species     12 rxns  1.60e-02 CPU s
+Iteration   5:    13 species     18 rxns  3.10e-02 CPU s
+Iteration   6:    16 species     22 rxns  1.50e-02 CPU s
+Iteration   7:    18 species     32 rxns  4.70e-02 CPU s
+Iteration   8:    18 species     38 rxns  1.60e-02 CPU s
+Cumulative CPU time for each rule
+Rule   1:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   2:     2 reactions 4.70e-02 CPU s 2.35e-02 CPU s/rxn
+Rule   3:     2 reactions 1.60e-02 CPU s 8.00e-03 CPU s/rxn
+Rule   4:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   5:     2 reactions 1.50e-02 CPU s 7.50e-03 CPU s/rxn
+Rule   6:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   7:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   8:     2 reactions 1.60e-02 CPU s 8.00e-03 CPU s/rxn
+Rule   9:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  10:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  11:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  12:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  13:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  14:     2 reactions 1.60e-02 CPU s 8.00e-03 CPU s/rxn
+Rule  15:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  16:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  17:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  18:     2 reactions 3.10e-02 CPU s 1.55e-02 CPU s/rxn
+Rule  19:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  20:     2 reactions 1.50e-02 CPU s 7.50e-03 CPU s/rxn
+Total   :    38 reactions 1.56e-01 CPU s 4.11e-03 CPU s/rxn
+Wrote network in net format to d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.net.
+Network simulation using cvode
+WARNING: writeFile(): Overwriting existing file d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.net.
+Wrote network in net format to d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.net.
+Running run_network on mansour-PC
+full command: c:/users/mansour/lib/site-packages/bionetgen/bng-win/bin/run_network -o d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.net d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.net 1 120
+[simulation PID is: 1575]
+run_network 3.0
+Read 43 parameters from d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.net
+Read 18 species from d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.net
+Read 6 group(s) from d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.net
+Read 2 function(s) from d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.net
+Read 38 reaction(s) from d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.net
+38 reaction(s) have nonzero rate
+Initialization took 0.03 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.cdat.
+Time course of groups written to file d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.gdat.
+Propagation took 7.80e-02 CPU seconds
+Program times:  0.11 CPU s 0.00 clock s
+Updating species concentrations from d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.cdat
+CPU TIME: simulate 0.30 s.
+Finished processing file d:\Energy modeling\Corrections\Jim's edit\EGFR_Kholodenko_Step3\2022_08_11__13_5_43\EGFR_Kholodenko_Step3.bngl.
+CPU TIME: total 0.47 s.

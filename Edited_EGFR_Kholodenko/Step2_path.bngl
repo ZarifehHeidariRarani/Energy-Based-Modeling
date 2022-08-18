@@ -1,0 +1,82 @@
+#This model is inferred from kholodenko model (biomodel)
+begin model
+begin parameters
+  r1_k1f   0.003
+  r1_k1b   0.06
+  r2_k2f   0.01
+  r2_k2b   0.1
+  r3_k3f   1.0
+  r3_k3b   0.01
+  r4_V4    450.0
+  r4_K4    50.0
+  r9_k9f   0.003
+  r9_k9b   0.05
+  r10_k10f 0.01
+  r10_k10b 0.06
+  r11_k11f 0.03
+  r11_k11b 0.0045
+  r12_k12f 0.0015
+  r12_k12b 0.0001
+  r13_k13f 0.09
+  r13_k13b 0.6
+  r14_k14f 6.0
+  r14_k14b 0.06
+  r15_k15f 0.3
+  r15_k15b 0.0009
+  r16_V16  1.7
+  r16_K16  340.0
+end parameters
+
+begin seed species
+  EGF()       680 #nM
+  EGFR()      100.0 #nM
+  Shc()       150.0 #nM
+  Grb2()      85
+  SOS()       34
+end seed species
+
+begin observables
+  #Molecules EGF EGF()
+  #Molecules EGFR EGFR()
+  #Molecules Shc Shc()
+  Species EGF_EGFR2_P     RP()    #RP in Kholodenko's paper
+  Species Shc_P           ShP()   #ShP in Kholodenko's paper
+  Molecules EGFRPtotal    RP(),RP(),R_Sh(),R_Sh(),R_ShP(),R_ShP(), R_G(), R_G(), R_GS(), R_GS()                    
+  Molecules ShPtotal      ShP(),R_ShP() 
+  Molecules Grb2EGFRtotal R_G(), R_GS()
+end observables   
+
+begin functions                                              
+  fRate3() =  r4_V4 /(EGF_EGFR2_P +r4_K4)
+  fRate15() = r16_V16 /(Shc_P+r16_K16)
+end functions
+
+begin reaction rules
+  # Ligand binding
+  v1:  EGF() + EGFR() <-> Ra() r1_k1f,r1_k1b
+  # Dimerization
+  v2:  Ra() + Ra() <-> R2() 2*r2_k2f,r2_k2b
+  # Phosphorylation
+  v3:  R2() <-> RP() r3_k3f,r3_k3b
+  # Dephosphorylation
+  v4:  RP() -> R2() fRate3
+  # EGFR + Grb2
+  v9:  Grb2() + RP() <-> R_G() r9_k9f,r9_k9b
+   # EGFR + Grb2 + SOS
+  v10: R_G() + SOS() <-> R_GS() r10_k10f,r10_k10b
+  v11: R_GS() <-> RP() + G_S()    r11_k11f,r11_k11b
+   # SOS + Grb2
+  v12: G_S() <->  Grb2() + SOS()  r12_k12f, r12_k12b
+   # EGFR + Shc
+  v13: Shc() + RP() <-> R_Sh() r13_k13f,r13_k13b
+  # Shc Phosphorylation
+  v14: R_Sh() <-> R_ShP() r14_k14f,r14_k14b
+  # RShcP Breaking apart
+  v15: R_ShP() <-> RP() + ShP() r15_k15f,r15_k15b
+  # Shc Dephosphorylation
+  v16: ShP() -> Shc() fRate15
+end reaction rules
+
+end model
+
+simulate({method=>"ode",t_end=>120,n_steps=>120})
