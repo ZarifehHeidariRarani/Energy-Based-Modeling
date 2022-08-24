@@ -1,0 +1,149 @@
+#This model is the energy-based model of the EGFR signalling pathway to recover the Kholodenko;s model output
+#In Step2, the model includes EGF, EGFR, Shc, Grb2, SOS, and PLCg
+begin model
+begin parameters
+  #EGF,EGFR Parameters 
+  r3_k3f_1 0.43   #1/s #Phosphorylation for Shc site
+  r3_k3f_2 0.08   #1/s #Phosphorylation for Grb2 site 
+  r3_k3f_3 0.04   #1/s #Phosphorylation for PLCg site 
+  r3_k3b   1.21   #1/s 
+  r4_V4    22.74  #nM/s
+  r4_K4    0.49   #nM
+  # Shc Parameters
+  r14_k14f 0.18    #1/s
+  r14_k14b 0.0001  #1/s
+  r16_V16  0.45    #nM/s
+  r16_K16  0.001   #nM
+  # PLCg Parameteres 
+  r6_k6f   0.34    #1/s
+  r6_k6b   0.004   #1/s
+  r8_V8    1       #nM/s
+  r8_K8    100     #nM
+  r25_k25f 0.27    #1/s
+  r25_k25b 0.01    #1/s
+  #Free Energies, J/nM
+  Gf_LR    -8
+  Gf_RR    -1.86
+  Gf_RSh   -5.6 
+  Gf_RG    2.8
+  Gf_GS    4.5
+  Gf_ShG   2.5 
+  Gf_RPL   1.5
+  #Cooperative terms
+  Gf_LRR   -10
+  Gf_LRRL  1.03
+  Gf_RShP  13    
+  Gf_RGS   -2.9
+  Gf_RShG  13.5 
+  Gf_ShGS  15.15
+  Gf_RPLP  6
+  #Rate distribution parameter, no units
+  phi      0.5
+  #Activation Energies, J/nM
+  Ea_LR    10
+  Ea_RR    3.72
+  Ea_RSh   4.7
+  Ea_RG    3.6
+  Ea_GS    6
+  Ea_ShG   -6.2
+  Ea_RPL   -6
+end parameters
+
+begin molecule types
+  EGF0(egfr)
+  EGFR0(egf,egfr)
+  EGF(egfr)
+  EGFR(egf,egfr,shc~0~P,grb2~0~P,plcg~0~P)
+  Shc(egfr,grb2~0~P)
+  Grb2(SH2,sos)
+  SOS(grb2)
+  PLCg(egfr,s~0~P,p_i~0~I)
+end molecule types
+
+begin seed species
+  EGF0(egfr)                   680.0         #nM
+  EGFR0(egf,egfr)              100.0         #nM
+  EGF(egfr)                    680.0         #nM
+  EGFR(egf,egfr,shc~0,grb2~0,plcg~0)  100.0  #nM
+  Shc(egfr,grb2~0)             150.0         #nM
+  Grb2(SH2,sos)                85.0          #nM
+  SOS(grb2)                    34.0          #nM
+  PLCg(egfr,s~0,p_i~0)         105.0         #nM  
+end seed species
+
+begin energy patterns
+  EGFR(egf!0).EGF(egfr!0)                                        Gf_LR
+  EGFR0(egf!0).EGF0(egfr!0)                                      Gf_LR
+  EGFR(egfr!1).EGFR(egfr!1)                                      Gf_RR+ 2*Gf_LRR + Gf_LRRL
+  EGFR(shc~P!2).Shc(egfr!2)                                      Gf_RSh
+  EGFR(shc~P!2).Shc(egfr!2,grb2~P)                               Gf_RShP
+  EGFR(grb2~P!2).Grb2(SH2!2)                                     Gf_RG
+  Grb2(sos!1).SOS(grb2!1)                                        Gf_GS
+  EGFR(grb2~P!2).Grb2(SH2!2,sos!1).SOS(grb2!1)                   Gf_RGS
+  Grb2(SH2!1).Shc(grb2~P!1)                                      Gf_ShG
+  EGFR(shc~P!2).Shc(egfr!2,grb2~P!1).Grb2(SH2!1)                 Gf_RShG
+  Shc(grb2~P!1).Grb2(SH2!1,sos!2).SOS(grb2!2)                    Gf_ShGS
+  EGFR(plcg~P!1).PLCg(egfr!1)                                    Gf_RPL
+  EGFR(plcg~P!1).PLCg(egfr!1,s~P)                                Gf_RPLP
+end energy patterns
+
+begin observables
+  Molecules Dimers          EGFR(egfr!+)
+  Species   EGF_EGFR2_P     EGFR(shc~P), EGFR(grb2~P), EGFR(plcg~P)      
+  Species   Shc_P           Shc(egfr,grb2~P) 
+  Molecules EGFRPtotal      EGFR(shc~P!?), EGFR(grb2~P!?), EGFR(plcg~P!?)
+  Molecules ShPtotal        Shc(grb2~P!?) 
+  Molecules Grb2EGFRtotal   Grb2(SH2!0).EGFR(grb2~P!0), Grb2(SH2!1).Shc(egfr!0,grb2~P!1).EGFR(shc~P!0)
+  Molecules Grb2Shctotal    Grb2(SH2!0).Shc(grb2~P!0)
+  Species   PLCg_P          PLCg(egfr,s~P,p_i~0)
+  Molecules PLCgPtotal      PLCg(s~P,p_i~0)
+end observables                   
+
+begin functions                                              
+  fRate3()  = r4_V4 /(EGF_EGFR2_P +r4_K4)
+  fRate15() = r16_V16 /(Shc_P+r16_K16)
+  frate7() = r8_V8/(PLCg_P+r8_K8)
+end functions
+
+begin reaction rules
+    # Ligand-receptor binding 
+  v1_1: EGFR(egfr,egf,shc,grb2) + EGF(egfr) <-> EGFR(egfr,egf!1,shc,grb2).EGF(egfr!1) Arrhenius(phi,Ea_LR) 
+  v1_2: EGFR0(egfr,egf) + EGF0(egfr) <-> EGFR0(egfr,egf!1).EGF0(egfr!1) Arrhenius(phi,Ea_LR)   
+    # Receptor-aggregation (JIM: This rule is restrictive because only unphosphorylated receptors can undimerize.)
+  v2: EGFR(egfr,egf!+,shc~0,grb2~0) + EGFR0(egfr,egf!+) <-> EGFR(egfr!1,egf!+,shc~0,grb2~0).EGFR0(egfr!1,egf!+) Arrhenius(phi,Ea_RR)
+    # Transphosphorylation of Egfr in dimer (bound at egfr)
+  v3_1: EGFR(egfr!1,shc~0).EGFR0(egfr!1) -> EGFR(egfr!1,shc~P).EGFR0(egfr!1)    r3_k3f_1
+  v3_2: EGFR(egfr!1,grb2~0).EGFR0(egfr!1) -> EGFR(egfr!1,grb2~P).EGFR0(egfr!1)  r3_k3f_2
+  v3_3: EGFR(egfr!1,plcg~0).EGFR0(egfr!1)  -> EGFR(egfr!1,plcg~P).EGFR0(egfr!1) r3_k3f_3
+    # Dephosphorylation by phosphotase (probably don't need both rates)
+  v4_1: EGFR(shc~P) -> EGFR(shc~0)   (r3_k3b + fRate3)
+  v4_2: EGFR(grb2~P) -> EGFR(grb2~0) (r3_k3b + fRate3)
+  v4_3: EGFR(plcg~P) -> EGFR(plcg~0) (r3_k3b + fRate3)
+    # Egfr + Shc (note that this covers the binding of both Shc(p~0) and Shc(p~P))
+  v13: Shc(egfr) + EGFR(shc~P) <-> EGFR(shc~P!1).Shc(egfr!1) Arrhenius(phi,Ea_RSh) 
+    # Shc transphos
+  v14: EGFR0(egfr!2).EGFR(egfr!2,shc~P!1).Shc(egfr!1,grb2~0) -> EGFR0(egfr!2).EGFR(egfr!2,shc~P!1).Shc(egfr!1,grb2~P)  r14_k14f
+    # Dephosphorylayion of Shc by phosphotase (may not need both rates)
+  v16: Shc(egfr,grb2~P) -> Shc(egfr,grb2~0) (r14_k14b + fRate15)
+    # Egfr + Grb2
+  v9:  Grb2(SH2) + EGFR(grb2~P) <-> EGFR(grb2~P!1).Grb2(SH2!1)  Arrhenius(phi,Ea_RG) 
+    # Grb2 + SOS
+  v12: Grb2(sos) + SOS(grb2) <->  Grb2(sos!1).SOS(grb2!1) Arrhenius(phi,Ea_GS)
+    # Grb2 + Shc
+  v21: Grb2(SH2) + Shc(grb2~P) <->  Grb2(SH2!1).Shc(grb2~P!1) Arrhenius(phi,Ea_ShG)
+    # Egfr + PLCg (Don't allow inactive form to bind)
+  v5:  EGFR(plcg~P) + PLCg(egfr,p_i~0)  <->  EGFR(plcg~P!1).PLCg(egfr!1,p_i~0)        Arrhenius(phi,Ea_RPL)  
+    # PLCg transphos
+  v6: EGFR0(egfr!2).EGFR(egfr!2,plcg~P!1).PLCg(egfr!1,s~0,p_i~0) -> EGFR0(egfr!2).EGFR(egfr!2,plcg~P!1).PLCg(egfr!1,s~P,p_i~0)   r6_k6f
+    # PLCg dephosphorylation, catalytic
+  v8: PLCg(egfr,s~P,p_i~0) -> PLCg(egfr,s~0,p_i~0) (r6_k6b + frate7)
+    # PLCg inactivation
+  v25: PLCg(egfr,s~P,p_i~0)  <->  PLCg(egfr,s~P,p_i~I)  r25_k25f, r25_k25b
+end reaction rules
+
+end model
+
+generate_network({overwrite=>1})
+simulate({method=>"ode",t_end=>120,n_steps=>120})
+
+

@@ -1,0 +1,59 @@
+BioNetGen version 2.8.2
+Reading from file /home/zarifeh/Downloads/Energy Modeling/Correction_PE/Edited_EnergyModels_Dummyinclude/Edited_EnergyModels_EGFR/Step2/2022_08_23__15_30_33/Step2.bngl (level 0)
+Read 24 parameters.
+Read 7 molecule types.
+Read 7 species.
+Read 8 energy patterns(s).
+Read 6 observable(s).
+Read 2 functions.
+Read 12 reaction rule(s).
+ACTION: generate_network( Step2 )
+Iteration   0:     7 species      0 rxns  0.00e+00 CPU s
+Iteration   1:    10 species      3 rxns  0.00e+00 CPU s
+Iteration   2:    11 species      7 rxns  1.00e-02 CPU s
+Iteration   3:    13 species     10 rxns  1.00e-02 CPU s
+Iteration   4:    17 species     17 rxns  1.00e-02 CPU s
+Iteration   5:    21 species     31 rxns  3.00e-02 CPU s
+Iteration   6:    25 species     46 rxns  2.00e-02 CPU s
+Iteration   7:    27 species     63 rxns  3.00e-02 CPU s
+Iteration   8:    27 species     69 rxns  1.00e-02 CPU s
+Cumulative CPU time for each rule
+Rule   1:     2 reactions 1.00e-02 CPU s 5.00e-03 CPU s/rxn
+Rule   2:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   3:     2 reactions 1.00e-02 CPU s 5.00e-03 CPU s/rxn
+Rule   4:     4 reactions 2.00e-02 CPU s 5.00e-03 CPU s/rxn
+Rule   5:     4 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   6:     4 reactions 1.00e-02 CPU s 2.50e-03 CPU s/rxn
+Rule   7:     4 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   8:    16 reactions 5.00e-02 CPU s 3.13e-03 CPU s/rxn
+Rule   9:     4 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  10:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  11:    16 reactions 2.00e-02 CPU s 1.25e-03 CPU s/rxn
+Rule  12:    10 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Total   :    69 reactions 1.20e-01 CPU s 1.74e-03 CPU s/rxn
+Wrote network in net format to ./Step2.net.
+CPU TIME: generate_network 0.13 s.
+ACTION: simulate( method=>"cvode" )
+Network simulation using cvode
+WARNING: writeFile(): Overwriting existing file ./Step2.net.
+Wrote network in net format to ./Step2.net.
+Running run_network on zarifeh-XPS
+full command: /home/zarifeh/.local/lib/python3.10/site-packages/bionetgen/bng-linux/bin/run_network -o ./Step2 -p cvode -a 1e-08 -r 1e-08 --cdat 1 --fdat 0 -g ./Step2.net ./Step2.net 0.1 1200
+[simulation PID is: 41379]
+run_network 3.0
+Read 42 parameters from ./Step2.net
+Read 27 species from ./Step2.net
+Read 6 group(s) from ./Step2.net
+Read 5 function(s) from ./Step2.net
+Read 69 reaction(s) from ./Step2.net
+69 reaction(s) have nonzero rate
+Initialization took 0.00 CPU seconds
+Propagating with cvode using dense LU
+Time course of concentrations written to file ./Step2.cdat.
+Time course of groups written to file ./Step2.gdat.
+Propagation took 5.00e-02 CPU seconds
+Program times:  0.05 CPU s 0.00 clock s
+Updating species concentrations from ./Step2.cdat
+CPU TIME: simulate 0.07 s.
+Finished processing file /home/zarifeh/Downloads/Energy Modeling/Correction_PE/Edited_EnergyModels_Dummyinclude/Edited_EnergyModels_EGFR/Step2/2022_08_23__15_30_33/Step2.bngl.
+CPU TIME: total 0.23 s.
