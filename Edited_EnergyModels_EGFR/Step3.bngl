@@ -1,5 +1,5 @@
 #This model is the energy-based model of the EGFR signalling pathway to recover the Kholodenko;s model output
-#In Step2, the model includes EGF, EGFR, Shc, Grb2, and SOS
+#In Step3, the model includes EGF, EGFR, Shc, Grb2, and SOS
 begin model
 begin parameters
   #EGF,EGFR Parameters 
