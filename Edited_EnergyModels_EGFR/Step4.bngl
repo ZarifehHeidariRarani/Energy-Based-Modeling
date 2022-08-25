@@ -107,10 +107,10 @@ end functions
 
 begin reaction rules
     # Ligand-receptor binding 
-  v1_1: EGFR(egfr,egf,shc,grb2) + EGF(egfr) <-> EGFR(egfr,egf!1,shc,grb2).EGF(egfr!1) Arrhenius(phi,Ea_LR) 
+  v1_1: EGFR(egfr,egf,shc,grb2,plcg) + EGF(egfr) <-> EGFR(egfr,egf!1,shc,grb2,plcg).EGF(egfr!1) Arrhenius(phi,Ea_LR) 
   v1_2: EGFR0(egfr,egf) + EGF0(egfr) <-> EGFR0(egfr,egf!1).EGF0(egfr!1) Arrhenius(phi,Ea_LR)   
     # Receptor-aggregation (JIM: This rule is restrictive because only unphosphorylated receptors can undimerize.)
-  v2: EGFR(egfr,egf!+,shc~0,grb2~0) + EGFR0(egfr,egf!+) <-> EGFR(egfr!1,egf!+,shc~0,grb2~0).EGFR0(egfr!1,egf!+) Arrhenius(phi,Ea_RR)
+  v2: EGFR(egfr,egf!+,shc~0,grb2~0,plcg~0) + EGFR0(egfr,egf!+) <-> EGFR(egfr!1,egf!+,shc~0,grb2~0,plcg~0).EGFR0(egfr!1,egf!+) Arrhenius(phi,Ea_RR)
     # Transphosphorylation of Egfr in dimer (bound at egfr)
   v3_1: EGFR(egfr!1,shc~0).EGFR0(egfr!1) -> EGFR(egfr!1,shc~P).EGFR0(egfr!1)    r3_k3f_1
   v3_2: EGFR(egfr!1,grb2~0).EGFR0(egfr!1) -> EGFR(egfr!1,grb2~P).EGFR0(egfr!1)  r3_k3f_2
