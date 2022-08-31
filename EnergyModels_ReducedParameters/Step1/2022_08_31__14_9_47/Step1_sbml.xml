@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by BioNetGen 2.8.2  -->
+<sbml xmlns="http://www.sbml.org/sbml/level2/version3" level="2" version="3">
+  <model id="Step1">
+    <listOfUnitDefinitions>
+      <unitDefinition id="substance" name="substance">
+        <listOfUnits>
+          <unit kind="item" exponent="1" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment id="cell" size="1"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S1" compartment="cell" initialAmount="580" name="EGF(egfr)"/>
+      <species id="S2" compartment="cell" initialAmount="580" name="EGF0(egfr)"/>
+      <species id="S3" compartment="cell" initialAmount="2.2042836e-10" name="EGFR0(egf,egfr)"/>
+      <species id="S4" compartment="cell" initialAmount="2.2042836e-10" name="EGFR(egf,egfr,shc~0)"/>
+      <species id="S5" compartment="cell" initialAmount="1.0245848" name="Shc(egfr,grb2~0)"/>
+      <species id="S6" compartment="cell" initialAmount="0.00037565071" name="EGF(egfr!1).EGFR(egf!1,egfr,shc~0)"/>
+      <species id="S7" compartment="cell" initialAmount="0.00037565071" name="EGF0(egfr!1).EGFR0(egf!1,egfr)"/>
+      <species id="S8" compartment="cell" initialAmount="87.613746" name="EGF(egfr!1).EGF0(egfr!2).EGFR(egf!1,egfr!3,shc~0).EGFR0(egf!2,egfr!3)"/>
+      <species id="S9" compartment="cell" initialAmount="7.2037969" name="EGF(egfr!1).EGF0(egfr!2).EGFR(egf!1,egfr!3,shc~P).EGFR0(egf!2,egfr!3)"/>
+      <species id="S10" compartment="cell" initialAmount="2.6442001" name="EGF(egfr!1).EGF0(egfr!2).EGFR(egf!1,egfr!3,shc~P!4).EGFR0(egf!2,egfr!3).Shc(egfr!4,grb2~0)"/>
+      <species id="S11" compartment="cell" initialAmount="2.5378811" name="EGF(egfr!1).EGF0(egfr!2).EGFR(egf!1,egfr!3,shc~P!4).EGFR0(egf!2,egfr!3).Shc(egfr!4,grb2~P)"/>
+      <species id="S12" compartment="cell" initialAmount="143.79333" name="Shc(egfr,grb2~P)"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <!-- Independent variables -->
+      <parameter id="r3_k3f" value="0.37"/>
+      <parameter id="r3_k3b" value="4.5"/>
+      <parameter id="r14_k14f" value="0.18"/>
+      <parameter id="r14_k14b" value="0.00331"/>
+      <parameter id="Gf_LR" value="-8"/>
+      <parameter id="Gf_RR" value="-1.86"/>
+      <parameter id="Gf_RSh" value="-5.6"/>
+      <parameter id="Gf_LRR" value="-10"/>
+      <parameter id="Gf_LRRL" value="1.03"/>
+      <parameter id="Gf_RShP" value="12"/>
+      <parameter id="phi" value="0.35"/>
+      <parameter id="Ea_LR" value="10"/>
+      <parameter id="Ea_RR" value="3.72"/>
+      <parameter id="Ea_RSh" value="4.7"/>
+      <!-- Dependent variables -->
+      <parameter id="_v1_1_local1" constant="true"/>
+      <parameter id="_v1_2_local1" constant="true"/>
+      <parameter id="__reverse_v1_1_local1" constant="true"/>
+      <parameter id="__reverse_v1_2_local1" constant="true"/>
+      <parameter id="_v2_local1" constant="true"/>
+      <parameter id="__reverse_v2_local1" constant="true"/>
+      <parameter id="_v13_local1" constant="true"/>
+      <parameter id="__reverse_v13_local1" constant="true"/>
+      <parameter id="__reverse_v13_local2" constant="true"/>
+      <parameter id="_v13_local2" constant="true"/>
+      <!-- Observables -->
+      <parameter id="Dimers" constant="false"/>
+      <parameter id="EGF_EGFR2_P" constant="false"/>
+      <parameter id="Shc_P" constant="false"/>
+      <parameter id="EGFRPtotal" constant="false"/>
+      <parameter id="ShPtotal" constant="false"/>
+    </listOfParameters>
+    <listOfInitialAssignments>
+      <!-- Dependent variables -->
+      <initialAssignment symbol="_v1_1_local1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <exp/>
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> Ea_LR </ci>
+                <apply>
+                  <times/>
+                  <ci> phi </ci>
+                  <ci> Gf_LR </ci>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="_v1_2_local1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <exp/>
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> Ea_LR </ci>
+                <apply>
+                  <times/>
+                  <ci> phi </ci>
+                  <ci> Gf_LR </ci>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="__reverse_v1_1_local1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <exp/>
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> Ea_LR </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn> 1 </cn>
+                    <ci> phi </ci>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <ci> Gf_LR </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="__reverse_v1_2_local1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <exp/>
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> Ea_LR </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn> 1 </cn>
+                    <ci> phi </ci>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <ci> Gf_LR </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="_v2_local1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <exp/>
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> Ea_RR </ci>
+                <apply>
+                  <times/>
+                  <ci> phi </ci>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <plus/>
+                      <ci> Gf_RR </ci>
+                      <apply>
+                        <times/>
+                        <cn> 2 </cn>
+                        <ci> Gf_LRR </ci>
+                      </apply>
+                    </apply>
+                    <ci> Gf_LRRL </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="__reverse_v2_local1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <exp/>
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> Ea_RR </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn> 1 </cn>
+                    <ci> phi </ci>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <apply>
+                      <plus/>
+                      <apply>
+                        <plus/>
+                        <ci> Gf_RR </ci>
+                        <apply>
+                          <times/>
+                          <cn> 2 </cn>
+                          <ci> Gf_LRR </ci>
+                        </apply>
+                      </apply>
+                      <ci> Gf_LRRL </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="_v13_local1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <exp/>
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> Ea_RSh </ci>
+                <apply>
+                  <times/>
+                  <ci> phi </ci>
+                  <ci> Gf_RSh </ci>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="__reverse_v13_local1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <exp/>
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> Ea_RSh </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn> 1 </cn>
+                    <ci> phi </ci>
+                  </apply>
+                  <apply>
+                    <minus/>
+                    <ci> Gf_RSh </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="__reverse_v13_local2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <exp/>
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> Ea_RSh </ci>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn> 1 </cn>
+                    <ci> phi </ci>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <apply>
+                      <minus/>
+                      <ci> Gf_RSh </ci>
+                    </apply>
+                    <apply>
+                      <minus/>
+                      <ci> Gf_RShP </ci>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="_v13_local2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <exp/>
+            <apply>
+              <minus/>
+              <apply>
+                <plus/>
+                <ci> Ea_RSh </ci>
+                <apply>
+                  <times/>
+                  <ci> phi </ci>
+                  <apply>
+                    <plus/>
+                    <ci> Gf_RSh </ci>
+                    <ci> Gf_RShP </ci>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </initialAssignment>
+    </listOfInitialAssignments>
+    <listOfRules>
+      <!-- Observables -->
+      <assignmentRule variable="Dimers">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <ci> S8 </ci>
+              <ci> S9 </ci>
+              <ci> S10 </ci>
+              <ci> S11 </ci>
+            </apply>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="EGF_EGFR2_P">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <cn> 0 </cn>
+              <ci> S9 </ci>
+            </apply>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="Shc_P">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <cn> 0 </cn>
+              <ci> S12 </ci>
+            </apply>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="EGFRPtotal">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <ci> S9 </ci>
+              <ci> S10 </ci>
+              <ci> S11 </ci>
+            </apply>
+          </math>
+      </assignmentRule>
+      <assignmentRule variable="ShPtotal">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <plus/>
+              <ci> S11 </ci>
+              <ci> S12 </ci>
+            </apply>
+          </math>
+      </assignmentRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction id="R1" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S1"/>
+          <speciesReference species="S4"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S6"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> _v1_1_local1 </ci>
+              <ci> S1 </ci>
+              <ci> S4 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R2" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S2"/>
+          <speciesReference species="S3"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S7"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> _v1_2_local1 </ci>
+              <ci> S2 </ci>
+              <ci> S3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R3" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S6"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S1"/>
+          <speciesReference species="S4"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> __reverse_v1_1_local1 </ci>
+              <ci> S6 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R4" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S7"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S2"/>
+          <speciesReference species="S3"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> __reverse_v1_2_local1 </ci>
+              <ci> S7 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R5" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S6"/>
+          <speciesReference species="S7"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S8"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> _v2_local1 </ci>
+              <ci> S6 </ci>
+              <ci> S7 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R6" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S8"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S6"/>
+          <speciesReference species="S7"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> __reverse_v2_local1 </ci>
+              <ci> S8 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R7" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S8"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S9"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> r3_k3f </ci>
+              <ci> S8 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R8" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S9"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S8"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> r3_k3b </ci>
+              <ci> S9 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R9" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S5"/>
+          <speciesReference species="S9"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S10"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> _v13_local1 </ci>
+              <ci> S5 </ci>
+              <ci> S9 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R10" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S10"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S5"/>
+          <speciesReference species="S9"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> __reverse_v13_local1 </ci>
+              <ci> S10 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R11" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S10"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S11"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> r14_k14f </ci>
+              <ci> S10 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R12" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S11"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S9"/>
+          <speciesReference species="S12"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> __reverse_v13_local2 </ci>
+              <ci> S11 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R13" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S9"/>
+          <speciesReference species="S12"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S11"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> _v13_local2 </ci>
+              <ci> S9 </ci>
+              <ci> S12 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="R14" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S12"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S5"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> r14_k14b </ci>
+              <ci> S12 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

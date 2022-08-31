@@ -1,0 +1,64 @@
+# Created by BioNetGen 2.8.2
+begin parameters
+    1 r3_k3f                 0.37  # Constant
+    2 r3_k3b                 4.5  # Constant
+    3 r14_k14f               0.18  # Constant
+    4 r14_k14b               3.31e-3  # Constant
+    5 Gf_LR                  -8  # Constant
+    6 Gf_RR                  -1.86  # Constant
+    7 Gf_RSh                 -5.6  # Constant
+    8 Gf_LRR                 -10  # Constant
+    9 Gf_LRRL                1.03  # Constant
+   10 Gf_RShP                12  # Constant
+   11 phi                    0.35  # Constant
+   12 Ea_LR                  10  # Constant
+   13 Ea_RR                  3.72  # Constant
+   14 Ea_RSh                 4.7  # Constant
+   15 _v1_1_local1           exp((-(Ea_LR+(phi*Gf_LR))))  # ConstantExpression
+   16 _v1_2_local1           exp((-(Ea_LR+(phi*Gf_LR))))  # ConstantExpression
+   17 __reverse_v1_1_local1  exp((-(Ea_LR+((1-phi)*(-Gf_LR)))))  # ConstantExpression
+   18 __reverse_v1_2_local1  exp((-(Ea_LR+((1-phi)*(-Gf_LR)))))  # ConstantExpression
+   19 _v2_local1             exp((-(Ea_RR+(phi*((Gf_RR+(2*Gf_LRR))+Gf_LRRL)))))  # ConstantExpression
+   20 __reverse_v2_local1    exp((-(Ea_RR+((1-phi)*(-((Gf_RR+(2*Gf_LRR))+Gf_LRRL))))))  # ConstantExpression
+   21 _v13_local1            exp((-(Ea_RSh+(phi*Gf_RSh))))  # ConstantExpression
+   22 __reverse_v13_local1   exp((-(Ea_RSh+((1-phi)*(-Gf_RSh)))))  # ConstantExpression
+   23 __reverse_v13_local2   exp((-(Ea_RSh+((1-phi)*((-Gf_RSh)+(-Gf_RShP))))))  # ConstantExpression
+   24 _v13_local2            exp((-(Ea_RSh+(phi*(Gf_RSh+Gf_RShP)))))  # ConstantExpression
+end parameters
+begin species
+    1 EGF(egfr) 680.0
+    2 EGF0(egfr) 680.0
+    3 EGFR0(egf,egfr) 100.0
+    4 EGFR(egf,egfr,shc~0) 100.0
+    5 Shc(egfr,grb2~0) 150.0
+    6 EGF(egfr!1).EGFR(egf!1,egfr,shc~0) 0
+    7 EGF0(egfr!1).EGFR0(egf!1,egfr) 0
+    8 EGF(egfr!1).EGF0(egfr!2).EGFR(egf!1,egfr!3,shc~0).EGFR0(egf!2,egfr!3) 0
+    9 EGF(egfr!1).EGF0(egfr!2).EGFR(egf!1,egfr!3,shc~P).EGFR0(egf!2,egfr!3) 0
+   10 EGF(egfr!1).EGF0(egfr!2).EGFR(egf!1,egfr!3,shc~P!4).EGFR0(egf!2,egfr!3).Shc(egfr!4,grb2~0) 0
+   11 EGF(egfr!1).EGF0(egfr!2).EGFR(egf!1,egfr!3,shc~P!4).EGFR0(egf!2,egfr!3).Shc(egfr!4,grb2~P) 0
+   12 Shc(egfr,grb2~P) 0
+end species
+begin reactions
+    1 1,4 6 _v1_1_local1 #v1_1
+    2 2,3 7 _v1_2_local1 #v1_2
+    3 6 1,4 __reverse_v1_1_local1 #_reverse_v1_1
+    4 7 2,3 __reverse_v1_2_local1 #_reverse_v1_2
+    5 6,7 8 _v2_local1 #v2
+    6 8 6,7 __reverse_v2_local1 #_reverse_v2
+    7 8 9 r3_k3f #v3
+    8 9 8 r3_k3b #v4
+    9 5,9 10 _v13_local1 #v13
+   10 10 5,9 __reverse_v13_local1 #_reverse_v13
+   11 10 11 r14_k14f #v14
+   12 11 9,12 __reverse_v13_local2 #_reverse_v13
+   13 9,12 11 _v13_local2 #v13
+   14 12 5 r14_k14b #v16
+end reactions
+begin groups
+    1 Dimers               8,9,10,11
+    2 EGF_EGFR2_P          9
+    3 Shc_P                12
+    4 EGFRPtotal           9,10,11
+    5 ShPtotal             11,12
+end groups
