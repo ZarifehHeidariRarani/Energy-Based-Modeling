@@ -1,6 +1,6 @@
 # Negative or positive cooperativity of ShcP:
 
-Based on the estimated parameters, it seems that the affinity of Shc for binding to EGFR intensively increases after phosphorylation, and it is in opposite of the original Kholodenko’s model.
+Based on the estimated parameters, it seems that the affinity of Shc for binding to EGFR intensively increases after phosphorylation, which contradicts the original Kholodenko’s model.
 
 K13= r13_k13f/ r13_k13b=0.057/10=0.0057
 
