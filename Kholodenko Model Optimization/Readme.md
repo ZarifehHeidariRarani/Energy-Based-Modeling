@@ -8,6 +8,7 @@ K15=r15_k15b/r15_k15f=1/1e-5=1e5
 
 
 For original Kholodenko model we have:
+
 r13_k13f = 0.09 
 r13_k13b = 0.6 →                K13 = 0.15 
 
