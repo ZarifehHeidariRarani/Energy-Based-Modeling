@@ -16,7 +16,7 @@ K13 = r13_k13f/r13_k13b = 0.057/10 = 0.0057
 ```
 K15 = r15_k15b/r15_k15f = 1/1e-5 = 1e5
 ```
-### cooperativity of ShcP in the original Kholodenko model
+### Cooperativity of ShcP in the original Kholodenko model
 For original Kholodenko model we have:
 ```
 r13_k13f = 0.09 
