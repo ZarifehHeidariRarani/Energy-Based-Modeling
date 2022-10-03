@@ -1,4 +1,4 @@
-# Negative or positive cooperativity of ShcP in the Kholodenko model:
+# Negative or positive cooperativity of ShcP in the model:
 
 ## v13:EGFR + Shc
   ``` 
