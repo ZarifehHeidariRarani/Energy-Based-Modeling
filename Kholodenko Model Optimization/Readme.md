@@ -1,4 +1,4 @@
-# Negative or positive cooperativity of ShcP:
+# Negative or positive cooperativity of ShcP in the Kholodenko model:
 
 ## v13:EGFR + Shc
   ``` 
@@ -26,7 +26,7 @@ r13_k13b = 0.6 →                K13 = 0.15
 r15_k15f = 0.3 
 r15_k15b = 0.0009  →            K15 = 0.003
 ``` 
-Based on these values, in the Kholodenko’s model, the affinity of Shc for binding to EGFR decreases after phosphorylation. 
+Based on these values, in the original Kholodenko’s model, the affinity of Shc for binding to EGFR decreases after phosphorylation. 
 
 
 
