@@ -1,6 +1,6 @@
 # Negative or positive cooperativity of ShcP in the model:
 
-## v13:EGFR + Shc
+## v13: EGFR + Shc
   ``` 
 Shc(egfr,p~0,grb2) + EGFR(egfr,egf!1,p~P,shc,grb2,plcg).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2,p~0,grb2).EGF(egfr!1)  r13_k13f,r13_k13b
 ```
