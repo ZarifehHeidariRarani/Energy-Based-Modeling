@@ -49,9 +49,6 @@ plt.savefig("Optimization.png")
 visualize.parameters(result)
 plt.savefig("Parameters.png")
 
-visualize.waterfall(result, scale_y="log10")
-plt.savefig("Waterfall.png")
-
 def get_x_mle(optimize_result, pypesto_problem, petab_problem, scaled=True):
     if not scaled:
         scaling = petab.parameters.get_optimization_parameter_scaling(
