@@ -11,11 +11,11 @@ EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2,p~P,grb2).EGF(egfr!1) <-> EGFR(e
 
 Based on the estimated parameters, it seems that the affinity of Shc for binding to EGFR intensively increases after phosphorylation, which contradicts the original Kholodenko’s model.
 ```
-r13_k13f = 0.06
+r13_k13f = 0.057
 r13_k13b = 10   →   K13 = r13_k13f/r13_k13b = 0.057 / 10 = 0.0057
 ```
 ```
-r15_k15f =0.00004 
+r15_k15f =1e-5
 r15_k15b =1  →       K15 = r15_k15b/r15_k15f = 1 / 1e-5 = 1e5
 
 ```
