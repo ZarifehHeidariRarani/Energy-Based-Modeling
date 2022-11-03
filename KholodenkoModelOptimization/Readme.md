@@ -20,6 +20,6 @@ For original Kholodenko model we have:
 K13 = r13_k13f/r13_k13b = 0.15
 ```
 ```
-K15 = 0.003
+K15 = r15_k15b/r15_k15f = 0.003
 ```
 Based on these values, in the original Kholodenko’s model, the affinity of Shc for binding to EGFR decreases after phosphorylation.
