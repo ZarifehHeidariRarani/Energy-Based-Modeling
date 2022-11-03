@@ -1,11 +1,11 @@
 # Negative or positive cooperativity of ShcP in the model:
 ## v13: EGFR + Shc
   ```
-Shc(egfr,p~0,grb2) + EGFR(egfr,egf!1,p~P,shc,grb2,plcg).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2,p~0,grb2).EGF(egfr!1)  r13_k13f,r13_k13b
+Shc(egfr,p~0,grb2) + EGFR(egfr,egf!1,p~P,shc,grb2,plcg).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2,p~0,grb2).EGF(egfr!1)  r13_k13f, r13_k13b
 ```
 ## v15: EGFRShcP Breaking apart
 ```
-EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2,p~P,grb2).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc,grb2,plcg).EGF(egfr!1) + Shc(egfr,p~P,grb2)    r15_k15f,r15_k15b
+EGFR(egfr,egf!1,p~P,shc!2,grb2,plcg).Shc(egfr!2,p~P,grb2).EGF(egfr!1) <-> EGFR(egfr,egf!1,p~P,shc,grb2,plcg).EGF(egfr!1) + Shc(egfr,p~P,grb2)    r15_k15f, r15_k15b
  ```
 Based on the estimated parameters, it seems that the affinity of Shc for binding to EGFR intensively decreases after phosphorylation.
 ```
