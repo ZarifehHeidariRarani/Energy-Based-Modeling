@@ -1,0 +1,34 @@
+begin model
+
+begin parameters
+  k1    1
+  k2    .1
+  k3    1
+end parameters
+
+begin molecule types
+  R(a)
+  A(r,Y~0~P)
+end molecule types
+
+begin species
+  R(a)      1
+  A(r,Y~0)  1
+end species
+
+begin observables
+  Molecules Abound R(a!1).A(r!1)
+  Molecules Ap     A(Y~P)
+end observables
+
+begin reaction rules
+ARbind: R(a) + A(r,Y~0)  <-> R(a!1).A(r!1,Y~0) k1, k2
+Aphos: R(a!1).A(r!1,Y~0) -> R(a!1).A(r!1,Y~P) k3
+ARpbind: R(a) + A(r,Y~P)  <-> R(a!1).A(r!1,Y~P) 0, 10*k2
+end reaction rules
+
+end model
+
+simulate({method=>"ode",t_end=>200,n_steps=>200})
+
+
