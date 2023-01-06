@@ -2,7 +2,7 @@ begin model
 
 begin parameters
   k1    1
-  k2    .1
+  k2    .01
 end parameters
 
 begin molecule types
