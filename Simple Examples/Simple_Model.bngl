@@ -1,0 +1,51 @@
+begin model
+
+begin parameters
+  k1p    1
+  k1m    0.1
+  kp     1
+  k2p    0.01
+  k2m    0.001
+  k3p    1
+  k3m    0.3
+  k4p    1 
+  k4m    0.1
+  k5p    1
+  k5m    0.1
+end parameters
+
+begin molecule types
+  R(a,b)
+  A(r,Y~0~P)
+  B(r,a)
+end molecule types
+
+begin species
+  R(a,b)      1
+  A(r,Y~0)    1
+  B(r,a)    1
+end species
+
+begin observables
+  Molecules AboundR   R(a!1).A(r!1)
+  Molecules BboundR   R(b!1).B(r!1)
+  Molecules Ap        A(Y~P)
+  Molecules BA        A(Y~P!1).B(a!1)
+end observables
+
+## model with just a receptor, R, and two adaptors, A and B. The receptor could have two sites, one that binds A
+## and one that binds B. Upon binding to R,  A could become phosphorylated and B could bind to it. 
+##
+begin reaction rules
+ARbind:   R(a,b) + A(r,Y~0)  <-> R(a!1,b).A(r!1,Y~0)      k1p, k1m
+Aphos:    R(a!1,b).A(r!1,Y~0) -> R(a!1,b).A(r!1,Y~P)      kp
+#Adephos:  A(r,Y~P) -> A(r,Y~0)                           k3
+ARpbind:  R(a,b) + A(r,Y~P)  <-> R(a!1,b).A(r!1,Y~P)      k2p, k2m
+BRbind:   R(a,b) + B(r,a) <-> R(a,b!1).B(r!1,a)           k3p, k3m
+RApBbind: R(a!1,b).A(r!1,Y~P) + B(r,a) <-> R(a!1,b).A(r!1,Y~P!2).B(r,a!2)  k4p, k4m
+ApBbind:  A(r,Y~P) + B(r,a) <-> A(r,Y~P!2).B(r,a!2)       k5p, k5m
+end reaction rules
+
+end model
+
+simulate({method=>"ode",t_end=>200,n_steps=>200})
