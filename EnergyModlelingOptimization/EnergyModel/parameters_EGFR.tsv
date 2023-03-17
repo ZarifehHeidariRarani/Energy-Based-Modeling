@@ -16,7 +16,7 @@ Gf_RR	Gf_RR	lin	-3	5	-1.86	1
 Gf_RSh	Gf_RSh	lin	-3	6	-5.6	1
 Gf_LRR	Gf_LRR	lin	-4	5	-10	1
 Gf_LRRL	Gf_LRRL	lin	-4	10	1.03	1
-Gf_RShP	Gf_RShP	lin	10	15	12	1
+Gf_RShP	Gf_RShP	lin	-5	15	12	1
 Gf_RG	Gf_RG	lin	-4	6	2.5	1
 Gf_GS	Gf_GS	lin	-5	10	1	1
 Gf_RGS	Gf_RGS	lin	-5	5	0.1	1
